@@ -1,0 +1,15 @@
+#include "UI\BaseControls.hpp"
+#include "UI\CommandWheel.hpp"
+
+class CfgFunctions {
+    class CMDWHEEL {
+        tag = "CMDWHEEL";
+        class Functions {
+            file = "functions";
+            class move {};
+            class follow {};
+            class hold {};
+            class regroup {};
+        };
+    };
+};
