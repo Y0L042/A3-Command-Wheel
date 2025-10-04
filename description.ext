@@ -10,6 +10,7 @@ class CfgFunctions {
             class follow {};
             class hold {};
             class regroup {};
+            class wheelLoop {};
         };
     };
 };
