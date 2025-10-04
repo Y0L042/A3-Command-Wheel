@@ -5,5 +5,4 @@
 
 commandStop (units player);
 
-closeDialog 0;
 hint "HOLD command issued";

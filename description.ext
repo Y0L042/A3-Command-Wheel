@@ -15,6 +15,9 @@ class CfgFunctions {
             class cover {};
             class advance {};
             class wheelLoop {};
+            class wheelClick {};
+            class load {};
+            class unload {};
         };
     };
 };
