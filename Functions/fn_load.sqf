@@ -1,5 +1,21 @@
 // Command Wheel onLoad handler
 // Params: _this = [display, ...]
+
+params ["_display"];
+
+uiNamespace setVariable ['CommandWheel_Display', _display];
+call CMDWHEEL_fnc_wheelLoop;
+
+// Update label texts from settings
+for "_i" from 0 to 7 do {
+    private _labelCtrl = _display displayCtrl (9020 + _i);
+    private _customName = missionNamespace getVariable [format ["CMDWHEEL_action%1_name", _i], ""];
+    
+    if (_customName != "") then {
+        _labelCtrl ctrlSetText _customName;
+    };
+};
+
 uiNamespace setVariable ['CommandWheel_Display', _this select 0];
 call CMDWHEEL_fnc_wheelLoop;
 

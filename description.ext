@@ -1,6 +1,12 @@
 #include "UI\BaseControls.hpp"
 #include "UI\CommandWheel.hpp"
 
+class Extended_PreInit_EventHandlers {
+    class CMDWHEEL {
+        init = "call compile preprocessFileLineNumbers 'XEH_preInit.sqf'";
+    };
+};
+
 class CfgFunctions {
     class CMDWHEEL {
         tag = "CMDWHEEL";
