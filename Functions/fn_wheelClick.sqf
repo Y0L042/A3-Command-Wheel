@@ -4,14 +4,14 @@ private _selected = _this;
 
 // Map section index to command function
 private _commands = [
-    CMDWHEEL_fnc_move,      // 0 - Top
-    CMDWHEEL_fnc_flank,     // 1 - Top Right
-    CMDWHEEL_fnc_follow,    // 2 - Right
-    CMDWHEEL_fnc_hold,      // 3 - Bottom Right
-    CMDWHEEL_fnc_stop,      // 4 - Bottom
-    CMDWHEEL_fnc_regroup,   // 5 - Bottom Left
-    CMDWHEEL_fnc_cover,     // 6 - Left
-    CMDWHEEL_fnc_advance    // 7 - Top Left
+    CMDWHEEL_fnc_00,    // 0 - Top          NNE
+    CMDWHEEL_fnc_01,    // 1 - Top Right    NEE
+    CMDWHEEL_fnc_02,    // 2 - Right        SEE
+    CMDWHEEL_fnc_03,    // 3 - Bottom Right SSE
+    CMDWHEEL_fnc_04,    // 4 - Bottom       SSW
+    CMDWHEEL_fnc_05,    // 5 - Bottom Left  SWW
+    CMDWHEEL_fnc_06,    // 6 - Left         NWW
+    CMDWHEEL_fnc_07     // 7 - Top Left     NNW
 ];
 
 // Execute the selected command

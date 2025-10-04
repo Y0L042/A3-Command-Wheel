@@ -6,14 +6,24 @@ class CfgFunctions {
         tag = "CMDWHEEL";
         class Functions {
             file = "functions";
+            class 00 {};
+            class 01 {};
+            class 02 {};
+            class 03 {};
+            class 04 {};
+            class 05 {};
+            class 06 {};
+            class 07 {};
+
             class move {};
             class flank {};
             class follow {};
-            class hold {};
+            class suppress {};
             class stop {};
             class regroup {};
             class cover {};
             class advance {};
+
             class wheelLoop {};
             class wheelClick {};
             class load {};

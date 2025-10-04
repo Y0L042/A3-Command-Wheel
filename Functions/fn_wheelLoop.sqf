@@ -1,3 +1,4 @@
+setMousePosition [0.5, 0.5];
 onEachFrame {
     // Get the display
     private _display = findDisplay 9000;
@@ -21,8 +22,6 @@ onEachFrame {
     private _distance = sqrt (_deltaX^2 + _deltaY^2);
     
     private _selected = -1;
-
-    systemChat format ["Angle: %1, Distance: %2", _angle, _distance];
     
     // Only select if mouse is far enough from center
     if (_distance > 0.05) then {

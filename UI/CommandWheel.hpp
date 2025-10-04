@@ -106,107 +106,121 @@ class CommandWheel {
             colorText[] = {1, 1, 1, 0};
         };
         
+
+
+
+
+        
+        // 22.5° (MOVE at top-right of vertical)
         class LabelTop: RscText {
             idc = 9020;
             text = "MOVE";
-            x = safeZoneX + safeZoneW * 0.5 - (2.5 * GUI_GRID_CENTER_W);
-            y = safeZoneY + safeZoneH * 0.5 - (120 * pixelH);
+            x = safeZoneX + safeZoneW * 0.5 + (46 * pixelW) - (2.5 * GUI_GRID_CENTER_W);
+            y = safeZoneY + safeZoneH * 0.5 - (111 * pixelH) - (0.5 * GUI_GRID_CENTER_H);
             w = 5 * GUI_GRID_CENTER_W;
             h = 1 * GUI_GRID_CENTER_H;
             colorText[] = {1, 1, 1, 1};
             sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-            style = 2;
+            style = 2 + 0x100;
+            angle = 22.5;
         };
 
+        // 67.5° (FLANK)
         class LabelTopRight: RscText {
             idc = 9021;
             text = "FLANK";
-            x = safeZoneX + safeZoneW * 0.5 + (85 * pixelW) - (2.5 * GUI_GRID_CENTER_W);
-            y = safeZoneY + safeZoneH * 0.5 - (85 * pixelH) - (0.5 * GUI_GRID_CENTER_H);
+            x = safeZoneX + safeZoneW * 0.5 + (111 * pixelW) - (2.5 * GUI_GRID_CENTER_W);
+            y = safeZoneY + safeZoneH * 0.5 - (46 * pixelH) - (0.5 * GUI_GRID_CENTER_H);
             w = 5 * GUI_GRID_CENTER_W;
             h = 1 * GUI_GRID_CENTER_H;
             colorText[] = {1, 1, 1, 1};
             sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
             style = 2 + 0x100;
-            angle = 45;
+            angle = 67.5;
         };
 
+        // 112.5° (FOLLOW)
         class LabelRight: RscText {
             idc = 9022;
             text = "FOLLOW";
-            x = safeZoneX + safeZoneW * 0.5 + (120 * pixelW) - (2.5 * GUI_GRID_CENTER_W);
-            y = safeZoneY + safeZoneH * 0.5 - (0.5 * GUI_GRID_CENTER_H);
+            x = safeZoneX + safeZoneW * 0.5 + (111 * pixelW) - (2.5 * GUI_GRID_CENTER_W);
+            y = safeZoneY + safeZoneH * 0.5 + (46 * pixelH) - (0.5 * GUI_GRID_CENTER_H);
             w = 5 * GUI_GRID_CENTER_W;
             h = 1 * GUI_GRID_CENTER_H;
             colorText[] = {1, 1, 1, 1};
             sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
             style = 2 + 0x100;
-            angle = 90;
+            angle = 112.5;
         };
 
+        // 157.5° (SUPPRESS)
         class LabelBottomRight: RscText {
             idc = 9023;
-            text = "HOLD";
-            x = safeZoneX + safeZoneW * 0.5 + (85 * pixelW) - (2.5 * GUI_GRID_CENTER_W);
-            y = safeZoneY + safeZoneH * 0.5 + (85 * pixelH) - (0.5 * GUI_GRID_CENTER_H);
+            text = "SUPPRESS";
+            x = safeZoneX + safeZoneW * 0.5 + (46 * pixelW) - (2.5 * GUI_GRID_CENTER_W);
+            y = safeZoneY + safeZoneH * 0.5 + (111 * pixelH) - (0.5 * GUI_GRID_CENTER_H);
             w = 5 * GUI_GRID_CENTER_W;
             h = 1 * GUI_GRID_CENTER_H;
             colorText[] = {1, 1, 1, 1};
             sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
             style = 2 + 0x100;
-            angle = 135;
+            angle = 157.5;
         };
 
+        // 202.5° (STOP)
         class LabelBottom: RscText {
             idc = 9024;
             text = "STOP";
-            x = safeZoneX + safeZoneW * 0.5 - (2.5 * GUI_GRID_CENTER_W);
-            y = safeZoneY + safeZoneH * 0.5 + (120 * pixelH) - (0.5 * GUI_GRID_CENTER_H);
+            x = safeZoneX + safeZoneW * 0.5 - (46 * pixelW) - (2.5 * GUI_GRID_CENTER_W);
+            y = safeZoneY + safeZoneH * 0.5 + (111 * pixelH) - (0.5 * GUI_GRID_CENTER_H);
             w = 5 * GUI_GRID_CENTER_W;
             h = 1 * GUI_GRID_CENTER_H;
             colorText[] = {1, 1, 1, 1};
             sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
             style = 2 + 0x100;
-            angle = 180;
+            angle = 202.5;
         };
 
+        // 247.5° (REGROUP)
         class LabelBottomLeft: RscText {
             idc = 9025;
             text = "REGROUP";
-            x = safeZoneX + safeZoneW * 0.5 - (85 * pixelW) - (2.5 * GUI_GRID_CENTER_W);
-            y = safeZoneY + safeZoneH * 0.5 + (85 * pixelH) - (0.5 * GUI_GRID_CENTER_H);
+            x = safeZoneX + safeZoneW * 0.5 - (111 * pixelW) - (2.5 * GUI_GRID_CENTER_W);
+            y = safeZoneY + safeZoneH * 0.5 + (46 * pixelH) - (0.5 * GUI_GRID_CENTER_H);
             w = 5 * GUI_GRID_CENTER_W;
             h = 1 * GUI_GRID_CENTER_H;
             colorText[] = {1, 1, 1, 1};
             sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
             style = 2 + 0x100;
-            angle = 225;
+            angle = 247.5;
         };
 
+        // 292.5° (COVER)
         class LabelLeft: RscText {
             idc = 9026;
             text = "COVER";
-            x = safeZoneX + safeZoneW * 0.5 - (120 * pixelW) - (2.5 * GUI_GRID_CENTER_W);
-            y = safeZoneY + safeZoneH * 0.5 - (0.5 * GUI_GRID_CENTER_H);
+            x = safeZoneX + safeZoneW * 0.5 - (111 * pixelW) - (2.5 * GUI_GRID_CENTER_W);
+            y = safeZoneY + safeZoneH * 0.5 - (46 * pixelH) - (0.5 * GUI_GRID_CENTER_H);
             w = 5 * GUI_GRID_CENTER_W;
             h = 1 * GUI_GRID_CENTER_H;
             colorText[] = {1, 1, 1, 1};
             sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
             style = 2 + 0x100;
-            angle = 270;
+            angle = 292.5;
         };
 
+        // 337.5° (ADVANCE)
         class LabelTopLeft: RscText {
             idc = 9027;
             text = "ADVANCE";
-            x = safeZoneX + safeZoneW * 0.5 - (85 * pixelW) - (2.5 * GUI_GRID_CENTER_W);
-            y = safeZoneY + safeZoneH * 0.5 - (85 * pixelH) - (0.5 * GUI_GRID_CENTER_H);
+            x = safeZoneX + safeZoneW * 0.5 - (46 * pixelW) - (2.5 * GUI_GRID_CENTER_W);
+            y = safeZoneY + safeZoneH * 0.5 - (111 * pixelH) - (0.5 * GUI_GRID_CENTER_H);
             w = 5 * GUI_GRID_CENTER_W;
             h = 1 * GUI_GRID_CENTER_H;
             colorText[] = {1, 1, 1, 1};
             sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
             style = 2 + 0x100;
-            angle = 315;
+            angle = 337.5;
         };
     };
 };

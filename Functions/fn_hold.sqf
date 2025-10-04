@@ -1,8 +1,21 @@
-// private _groupUnits = units group player - [player];
-// {
-//     _x commandStop true;
-// } forEach _groupUnits;
+// Get player's group// private _groupUnits = units group player - [player];
 
-commandStop (units player);
+private _playerGrp = group player;// {
+
+//     _x commandStop true;
+
+// Set group to defensive stance// } forEach _groupUnits;
+
+_playerGrp setBehaviour "COMBAT";
+
+_playerGrp setSpeedMode "LIMITED";commandStop (units player);
+
+_playerGrp setCombatMode "RED";
+
+hint "HOLD command issued";
+// Command all units to hold position
+{
+    _x commandStop true;
+} forEach (units _playerGrp);
 
 hint "HOLD command issued";
