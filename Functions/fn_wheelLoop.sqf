@@ -7,9 +7,6 @@ if (isNull _display) exitWith {};
 private _centerX = GUI_GRID_CENTER_X + 20 * GUI_GRID_CENTER_W;
 private _centerY = GUI_GRID_CENTER_Y + 12.5 * GUI_GRID_CENTER_H;
 
-private _normalColor = [0.3, 0.3, 0.3, 0.8];
-private _hoverColor = [0.6, 0.8, 0.3, 0.9];
-
 while {uiNamespace getVariable ['CommandWheel_Active', false]} do {
     if (isNull _display) exitWith {};
     
@@ -22,40 +19,24 @@ while {uiNamespace getVariable ['CommandWheel_Active', false]} do {
     
     private _selected = -1;
     
-    if (_distance > 0.02) then {
-        if (_angle >= 315 || _angle < 45) then {
-            _selected = 0;
-        } else {
-            if (_angle >= 45 && _angle < 135) then {
-                _selected = 1;
-            } else {
-                if (_angle >= 135 && _angle < 225) then {
-                    _selected = 2;
-                } else {
-                    if (_angle >= 225 && _angle < 315) then {
-                        _selected = 3;
-                    };
-                };
-            };
-        };
+    if (_distance > 0.03) then {
+        _selected = floor ((_angle + 22.5) / 45) % 8;
     };
     
-    {
-        private _ctrl = _display displayCtrl (9010 + _forEachIndex);
-        if (_forEachIndex == _selected) then {
-            _ctrl ctrlSetBackgroundColor _hoverColor;
-        } else {
-            _ctrl ctrlSetBackgroundColor _normalColor;
-        };
-    } forEach [0, 1, 2, 3];
+    // Hide all highlights
+    for "_i" from 0 to 7 do {
+        private _ctrl = _display displayCtrl (9010 + _i);
+        _ctrl ctrlSetTextColor [1, 1, 1, 0];
+    };
+    
+    // Show selected highlight
+    if (_selected >= 0) then {
+        private _ctrl = _display displayCtrl (9010 + _selected);
+        _ctrl ctrlSetTextColor [1, 1, 1, 1];
+    };
     
     if (_selected != (uiNamespace getVariable ['CommandWheel_Selected', -1])) then {
         uiNamespace setVariable ['CommandWheel_Selected', _selected];
-        switch (_selected) do {
-            case 0: { systemChat "MOVE"; };
-            case 1: { systemChat "FOLLOW"; };
-            case 2: { systemChat "HOLD"; };
-            case 3: { systemChat "REGROUP"; };
-        };
     };
+    
 };

@@ -7,9 +7,13 @@ class CfgFunctions {
         class Functions {
             file = "functions";
             class move {};
+            class flank {};
             class follow {};
             class hold {};
+            class stop {};
             class regroup {};
+            class cover {};
+            class advance {};
             class wheelLoop {};
         };
     };
