@@ -1,11 +1,14 @@
-onEachFrame {																
-    _pos = getMousePosition;
-    // systemChat format ["Mouse Position: %1", _pos];
-
-        
-    private _centerX = 0.5;
-    private _centerY = 0.5;
+onEachFrame {
+    // Get the display
+    private _display = findDisplay 9000;
+    if (isNull _display) exitWith {};
     
+    // private _centerX = 0.5;
+    // private _centerY = 0.5;
+    
+    private _centerX = safeZoneX + safeZoneW * 0.5;
+    private _centerY = safeZoneY + safeZoneH * 0.5;
+
     // Get Arma's virtual mouse position
     private _mousePos = getMousePosition;
     private _deltaX = (_mousePos select 0) - _centerX;
@@ -18,13 +21,14 @@ onEachFrame {
     private _distance = sqrt (_deltaX^2 + _deltaY^2);
     
     private _selected = -1;
+
+    systemChat format ["Angle: %1, Distance: %2", _angle, _distance];
     
     // Only select if mouse is far enough from center
     if (_distance > 0.05) then {
-        _selected = floor ((_angle + 22.5) / 45) mod 8;
+        _selected = floor ((_angle) / 45) mod 8;
     };
 
-    systemChat format ["Angle: %1, Distance: %2, Selected: %3", _angle, _distance, _selected];
     
     // Update highlights only if selection changed
     private _oldSelected = uiNamespace getVariable ['CommandWheel_Selected', -1];
