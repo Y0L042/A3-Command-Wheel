@@ -485,10 +485,10 @@ class CommandWheel {
             style = 2 + 0x100;
             angle = 22.5;
         };
-        // 67.5° (STEALTH & HOLD FIRE)
+        // 67.5° (PRONE)
         class LabelTopRight: RscText {
             idc = 9021;
-            text = "STEALTH & HOLD FIRE";
+            text = "PRONE";
             x = safeZoneX + safeZoneW * 0.5 + (110 * pixelW) - (2.5 * GUI_GRID_CENTER_W);
             y = safeZoneY + safeZoneH * 0.5 + (-45 * pixelH) - (0.5 * GUI_GRID_CENTER_H);
             w = 5 * GUI_GRID_CENTER_W;
@@ -498,10 +498,10 @@ class CommandWheel {
             style = 2 + 0x100;
             angle = 67.5;
         };
-        // 112.5° (SUPPRESSIVE FIRE)
+        // 112.5° (STEALTH)
         class LabelRight: RscText {
             idc = 9022;
-            text = "SUPPRESSIVE FIRE";
+            text = "STEALTH";
             x = safeZoneX + safeZoneW * 0.5 + (110 * pixelW) - (2.5 * GUI_GRID_CENTER_W);
             y = safeZoneY + safeZoneH * 0.5 + (45 * pixelH) - (0.5 * GUI_GRID_CENTER_H);
             w = 5 * GUI_GRID_CENTER_W;
@@ -523,6 +523,32 @@ class CommandWheel {
             sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.0)";
             style = 2 + 0x100;
             angle = 157.5;
+        };
+        // 202.5° (SUPPRESSIVE FIRE)
+        class LabelBottom: RscText {
+            idc = 9024;
+            text = "SUPPRESSIVE FIRE";
+            x = safeZoneX + safeZoneW * 0.5 + (-45 * pixelW) - (2.5 * GUI_GRID_CENTER_W);
+            y = safeZoneY + safeZoneH * 0.5 + (110 * pixelH) - (0.5 * GUI_GRID_CENTER_H);
+            w = 5 * GUI_GRID_CENTER_W;
+            h = 1 * GUI_GRID_CENTER_H;
+            colorText[] = {1, 1, 1, 1};
+            sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.0)";
+            style = 2 + 0x100;
+            angle = 202.5;
+        };
+        // 337.5° (TELEPORT TO ME)
+        class LabelTopLeft: RscText {
+            idc = 9027;
+            text = "TELEPORT TO ME";
+            x = safeZoneX + safeZoneW * 0.5 + (-45 * pixelW) - (2.5 * GUI_GRID_CENTER_W);
+            y = safeZoneY + safeZoneH * 0.5 + (-110 * pixelH) - (0.5 * GUI_GRID_CENTER_H);
+            w = 5 * GUI_GRID_CENTER_W;
+            h = 1 * GUI_GRID_CENTER_H;
+            colorText[] = {1, 1, 1, 1};
+            sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.0)";
+            style = 2 + 0x100;
+            angle = 337.5;
         };
         
         // Subcommand Labels (outer ring)
@@ -566,7 +592,7 @@ class CommandWheel {
 };
         class SubLabel0_3: RscText {
     idc = 9203;
-    text = "TELEPORT TO ME";
+    text = "GARRISON";
     x = safeZoneX + safeZoneW * 0.5 + (177 * pixelW) - (2.0 * GUI_GRID_CENTER_W);
     y = safeZoneY + safeZoneH * 0.5 + (-161 * pixelH) - (0.4 * GUI_GRID_CENTER_H);
     w = 4 * GUI_GRID_CENTER_W;
@@ -577,10 +603,10 @@ class CommandWheel {
     angle = 47.81;
 };
 
-        // Section 1 (STEALTH & HOLD FIRE) subcommand labels
+        // Section 1 (PRONE) subcommand labels
         class SubLabel1_0: RscText {
     idc = 9204;
-    text = "PRONE";
+    text = "GET UP";
     x = safeZoneX + safeZoneW * 0.5 + (161 * pixelW) - (2.0 * GUI_GRID_CENTER_W);
     y = safeZoneY + safeZoneH * 0.5 + (-177 * pixelH) - (0.4 * GUI_GRID_CENTER_H);
     w = 4 * GUI_GRID_CENTER_W;
@@ -592,7 +618,7 @@ class CommandWheel {
 };
         class SubLabel1_1: RscText {
     idc = 9205;
-    text = "GET UP";
+    text = "MATCH MY STANCE";
     x = safeZoneX + safeZoneW * 0.5 + (205 * pixelW) - (2.0 * GUI_GRID_CENTER_W);
     y = safeZoneY + safeZoneH * 0.5 + (-123 * pixelH) - (0.4 * GUI_GRID_CENTER_H);
     w = 4 * GUI_GRID_CENTER_W;
@@ -604,7 +630,7 @@ class CommandWheel {
 };
         class SubLabel1_2: RscText {
     idc = 9206;
-    text = "MATCH MY STANCE";
+    text = "FIND COVER";
     x = safeZoneX + safeZoneW * 0.5 + (232 * pixelW) - (2.0 * GUI_GRID_CENTER_W);
     y = safeZoneY + safeZoneH * 0.5 + (-58 * pixelH) - (0.4 * GUI_GRID_CENTER_H);
     w = 4 * GUI_GRID_CENTER_W;
@@ -616,7 +642,7 @@ class CommandWheel {
 };
         class SubLabel1_3: RscText {
     idc = 9207;
-    text = "FIND COVER";
+    text = "PRONE";
     x = safeZoneX + safeZoneW * 0.5 + (239 * pixelW) - (2.0 * GUI_GRID_CENTER_W);
     y = safeZoneY + safeZoneH * 0.5 + (11 * pixelH) - (0.4 * GUI_GRID_CENTER_H);
     w = 4 * GUI_GRID_CENTER_W;
@@ -627,10 +653,10 @@ class CommandWheel {
     angle = 92.81;
 };
 
-        // Section 2 (SUPPRESSIVE FIRE) subcommand labels
+        // Section 2 (STEALTH) subcommand labels
         class SubLabel2_0: RscText {
     idc = 9208;
-    text = "FORCED SUPPRESSIVE FIRE";
+    text = "ALERT";
     x = safeZoneX + safeZoneW * 0.5 + (239 * pixelW) - (2.0 * GUI_GRID_CENTER_W);
     y = safeZoneY + safeZoneH * 0.5 + (-11 * pixelH) - (0.4 * GUI_GRID_CENTER_H);
     w = 4 * GUI_GRID_CENTER_W;
@@ -727,12 +753,60 @@ class CommandWheel {
     angle = 182.81;
 };
 
-        // Section 4 (empty) subcommand labels
+        // Section 4 (SUPPRESSIVE FIRE) subcommand labels
+        class SubLabel4_0: RscText {
+    idc = 9216;
+    text = "FORCED SUPPRESSIVE FIRE";
+    x = safeZoneX + safeZoneW * 0.5 + (11 * pixelW) - (2.0 * GUI_GRID_CENTER_W);
+    y = safeZoneY + safeZoneH * 0.5 + (239 * pixelH) - (0.4 * GUI_GRID_CENTER_H);
+    w = 4 * GUI_GRID_CENTER_W;
+    h = 0.8 * GUI_GRID_CENTER_H;
+    colorText[] = {0.7, 0.9, 1, 0};
+    sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+    style = 2 + 0x100;
+    angle = 177.19;
+};
+        class SubLabel4_1: RscText {
+    idc = 9217;
+    text = "TARGET ENEMY";
+    x = safeZoneX + safeZoneW * 0.5 + (-58 * pixelW) - (2.0 * GUI_GRID_CENTER_W);
+    y = safeZoneY + safeZoneH * 0.5 + (232 * pixelH) - (0.4 * GUI_GRID_CENTER_H);
+    w = 4 * GUI_GRID_CENTER_W;
+    h = 0.8 * GUI_GRID_CENTER_H;
+    colorText[] = {0.7, 0.9, 1, 0};
+    sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+    style = 2 + 0x100;
+    angle = 194.06;
+};
+        class SubLabel4_2: RscText {
+    idc = 9218;
+    text = "HEAL SOLDIER";
+    x = safeZoneX + safeZoneW * 0.5 + (-123 * pixelW) - (2.0 * GUI_GRID_CENTER_W);
+    y = safeZoneY + safeZoneH * 0.5 + (205 * pixelH) - (0.4 * GUI_GRID_CENTER_H);
+    w = 4 * GUI_GRID_CENTER_W;
+    h = 0.8 * GUI_GRID_CENTER_H;
+    colorText[] = {0.7, 0.9, 1, 0};
+    sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+    style = 2 + 0x100;
+    angle = 210.94;
+};
+        class SubLabel4_3: RscText {
+    idc = 9219;
+    text = "DISENGAGE";
+    x = safeZoneX + safeZoneW * 0.5 + (-177 * pixelW) - (2.0 * GUI_GRID_CENTER_W);
+    y = safeZoneY + safeZoneH * 0.5 + (161 * pixelH) - (0.4 * GUI_GRID_CENTER_H);
+    w = 4 * GUI_GRID_CENTER_W;
+    h = 0.8 * GUI_GRID_CENTER_H;
+    colorText[] = {0.7, 0.9, 1, 0};
+    sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+    style = 2 + 0x100;
+    angle = 227.81;
+};
 
         // Section 5 (empty) subcommand labels
 
         // Section 6 (empty) subcommand labels
 
-        // Section 7 (empty) subcommand labels
+        // Section 7 (TELEPORT TO ME) subcommand labels
     };
 };

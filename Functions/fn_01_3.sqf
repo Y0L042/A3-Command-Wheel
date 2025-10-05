@@ -1,8 +1,8 @@
 /*
- * Wrapper for: Stealth & Hold Fire > Find cover
- * Calls: fn_findCover.sqf
+ * Wrapper for: Prone > Prone
+ * Calls: fn_prone.sqf
  */
 
 params ["_caller"];
 
-_caller call CMDWHEEL_fnc_findCover;
+_caller call CMDWHEEL_fnc_prone;

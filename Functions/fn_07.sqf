@@ -1,7 +1,8 @@
 /*
- * Empty command slot 07
+ * Wrapper for: Teleport to me
+ * Calls: fn_teleportToMe.sqf
  */
 
 params ["_caller"];
 
-// No command assigned
+_caller call CMDWHEEL_fnc_teleportToMe;

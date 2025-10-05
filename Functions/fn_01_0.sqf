@@ -1,8 +1,8 @@
 /*
- * Wrapper for: Stealth & Hold Fire > Prone
- * Calls: fn_prone.sqf
+ * Wrapper for: Prone > Get Up
+ * Calls: fn_getUp.sqf
  */
 
 params ["_caller"];
 
-_caller call CMDWHEEL_fnc_prone;
+_caller call CMDWHEEL_fnc_getUp;

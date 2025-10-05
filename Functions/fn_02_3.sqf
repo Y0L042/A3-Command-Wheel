@@ -1,5 +1,5 @@
 /*
- * Wrapper for: Suppressive fire > Disengage
+ * Wrapper for: Stealth > Disengage
  * Calls: fn_disengage.sqf
  */
 

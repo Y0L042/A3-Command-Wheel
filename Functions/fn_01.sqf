@@ -1,8 +1,8 @@
 /*
- * Wrapper for: Stealth & Hold Fire
- * Calls: fn_stealthHoldFire.sqf
+ * Wrapper for: Prone
+ * Calls: fn_prone.sqf
  */
 
 params ["_caller"];
 
-_caller call CMDWHEEL_fnc_stealthHoldFire;
+_caller call CMDWHEEL_fnc_prone;

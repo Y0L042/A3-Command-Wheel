@@ -1,7 +1,8 @@
 /*
- * Empty sub-command slot 04_1
+ * Wrapper for: Suppressive fire > Target enemy
+ * Calls: fn_targetEnemy.sqf
  */
 
 params ["_caller"];
 
-// No command assigned
+_caller call CMDWHEEL_fnc_targetEnemy;

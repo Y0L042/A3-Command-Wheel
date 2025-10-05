@@ -29,12 +29,12 @@ private _category = "Command Wheel";
     1
 ] call CBA_fnc_addSetting;
 
-// Section 1 - STEALTH & HOLD FIRE
+// Section 1 - PRONE
 [
     "CMDWHEEL_action1_enabled",
     "CHECKBOX",
-    ["Use Custom Action (STEALTH & HOLD FIRE)", "Enable custom action for STEALTH & HOLD FIRE"],
-    [_category, "Section 1 - STEALTH & HOLD FIRE"],
+    ["Use Custom Action (PRONE)", "Enable custom action for PRONE"],
+    [_category, "Section 1 - PRONE"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -43,8 +43,8 @@ private _category = "Command Wheel";
     "CMDWHEEL_action1_name",
     "EDITBOX",
     ["Action Name", "Display name for this action"],
-    [_category, "Section 1 - STEALTH & HOLD FIRE"],
-    "Stealth & Hold Fire",
+    [_category, "Section 1 - PRONE"],
+    "Prone",
     1
 ] call CBA_fnc_addSetting;
 
@@ -52,17 +52,17 @@ private _category = "Command Wheel";
     "CMDWHEEL_action1_code",
     "EDITBOX",
     ["Action Code", "SQF code to execute (e.g., 'hint ''Hello''') or script call (e.g., 'call myFunction' or '[] execVM ''myScript.sqf''')"],
-    [_category, "Section 1 - STEALTH & HOLD FIRE"],
+    [_category, "Section 1 - PRONE"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Section 2 - SUPPRESSIVE FIRE
+// Section 2 - STEALTH
 [
     "CMDWHEEL_action2_enabled",
     "CHECKBOX",
-    ["Use Custom Action (SUPPRESSIVE FIRE)", "Enable custom action for SUPPRESSIVE FIRE"],
-    [_category, "Section 2 - SUPPRESSIVE FIRE"],
+    ["Use Custom Action (STEALTH)", "Enable custom action for STEALTH"],
+    [_category, "Section 2 - STEALTH"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -71,8 +71,8 @@ private _category = "Command Wheel";
     "CMDWHEEL_action2_name",
     "EDITBOX",
     ["Action Name", "Display name for this action"],
-    [_category, "Section 2 - SUPPRESSIVE FIRE"],
-    "Suppressive fire",
+    [_category, "Section 2 - STEALTH"],
+    "Stealth",
     1
 ] call CBA_fnc_addSetting;
 
@@ -80,7 +80,7 @@ private _category = "Command Wheel";
     "CMDWHEEL_action2_code",
     "EDITBOX",
     ["Action Code", "SQF code to execute (e.g., 'hint ''Hello''') or script call (e.g., 'call myFunction' or '[] execVM ''myScript.sqf''')"],
-    [_category, "Section 2 - SUPPRESSIVE FIRE"],
+    [_category, "Section 2 - STEALTH"],
     "",
     1
 ] call CBA_fnc_addSetting;
@@ -113,12 +113,12 @@ private _category = "Command Wheel";
     1
 ] call CBA_fnc_addSetting;
 
-// Section 4 - SECTION 4
+// Section 4 - SUPPRESSIVE FIRE
 [
     "CMDWHEEL_action4_enabled",
     "CHECKBOX",
-    ["Use Custom Action (SECTION 4)", "Enable custom action for SECTION 4"],
-    [_category, "Section 4 - SECTION 4"],
+    ["Use Custom Action (SUPPRESSIVE FIRE)", "Enable custom action for SUPPRESSIVE FIRE"],
+    [_category, "Section 4 - SUPPRESSIVE FIRE"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -127,8 +127,8 @@ private _category = "Command Wheel";
     "CMDWHEEL_action4_name",
     "EDITBOX",
     ["Action Name", "Display name for this action"],
-    [_category, "Section 4 - SECTION 4"],
-    "Section 4",
+    [_category, "Section 4 - SUPPRESSIVE FIRE"],
+    "Suppressive fire",
     1
 ] call CBA_fnc_addSetting;
 
@@ -136,7 +136,7 @@ private _category = "Command Wheel";
     "CMDWHEEL_action4_code",
     "EDITBOX",
     ["Action Code", "SQF code to execute (e.g., 'hint ''Hello''') or script call (e.g., 'call myFunction' or '[] execVM ''myScript.sqf''')"],
-    [_category, "Section 4 - SECTION 4"],
+    [_category, "Section 4 - SUPPRESSIVE FIRE"],
     "",
     1
 ] call CBA_fnc_addSetting;
@@ -197,12 +197,12 @@ private _category = "Command Wheel";
     1
 ] call CBA_fnc_addSetting;
 
-// Section 7 - SECTION 7
+// Section 7 - TELEPORT TO ME
 [
     "CMDWHEEL_action7_enabled",
     "CHECKBOX",
-    ["Use Custom Action (SECTION 7)", "Enable custom action for SECTION 7"],
-    [_category, "Section 7 - SECTION 7"],
+    ["Use Custom Action (TELEPORT TO ME)", "Enable custom action for TELEPORT TO ME"],
+    [_category, "Section 7 - TELEPORT TO ME"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -211,8 +211,8 @@ private _category = "Command Wheel";
     "CMDWHEEL_action7_name",
     "EDITBOX",
     ["Action Name", "Display name for this action"],
-    [_category, "Section 7 - SECTION 7"],
-    "Section 7",
+    [_category, "Section 7 - TELEPORT TO ME"],
+    "Teleport to me",
     1
 ] call CBA_fnc_addSetting;
 
@@ -220,7 +220,7 @@ private _category = "Command Wheel";
     "CMDWHEEL_action7_code",
     "EDITBOX",
     ["Action Code", "SQF code to execute (e.g., 'hint ''Hello''') or script call (e.g., 'call myFunction' or '[] execVM ''myScript.sqf''')"],
-    [_category, "Section 7 - SECTION 7"],
+    [_category, "Section 7 - TELEPORT TO ME"],
     "",
     1
 ] call CBA_fnc_addSetting;
@@ -309,11 +309,11 @@ private _category = "Command Wheel";
     1
 ] call CBA_fnc_addSetting;
 
-// Section 0 - Subsection 3 (Teleport to me)
+// Section 0 - Subsection 3 (Garrison)
 [
     "CMDWHEEL_action0_sub3_enabled",
     "CHECKBOX",
-    ["Use Custom Subcommand (Teleport to me)", "Enable custom subcommand for HOLD > Teleport to me"],
+    ["Use Custom Subcommand (Garrison)", "Enable custom subcommand for HOLD > Garrison"],
     [_category, "Section 0 - HOLD > Subcommands"],
     false,
     1
@@ -324,7 +324,7 @@ private _category = "Command Wheel";
     "EDITBOX",
     ["Subcommand Name", "Display name for this subcommand"],
     [_category, "Section 0 - HOLD > Subcommands"],
-    "Teleport to me",
+    "Garrison",
     1
 ] call CBA_fnc_addSetting;
 
@@ -337,12 +337,12 @@ private _category = "Command Wheel";
     1
 ] call CBA_fnc_addSetting;
 
-// Section 1 - Subsection 0 (Prone)
+// Section 1 - Subsection 0 (Get Up)
 [
     "CMDWHEEL_action1_sub0_enabled",
     "CHECKBOX",
-    ["Use Custom Subcommand (Prone)", "Enable custom subcommand for STEALTH & HOLD FIRE > Prone"],
-    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
+    ["Use Custom Subcommand (Get Up)", "Enable custom subcommand for PRONE > Get Up"],
+    [_category, "Section 1 - PRONE > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -351,8 +351,8 @@ private _category = "Command Wheel";
     "CMDWHEEL_action1_sub0_name",
     "EDITBOX",
     ["Subcommand Name", "Display name for this subcommand"],
-    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
-    "Prone",
+    [_category, "Section 1 - PRONE > Subcommands"],
+    "Get Up",
     1
 ] call CBA_fnc_addSetting;
 
@@ -360,17 +360,17 @@ private _category = "Command Wheel";
     "CMDWHEEL_action1_sub0_code",
     "EDITBOX",
     ["Subcommand Code", "SQF code to execute"],
-    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
+    [_category, "Section 1 - PRONE > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Section 1 - Subsection 1 (Get Up)
+// Section 1 - Subsection 1 (Match my stance)
 [
     "CMDWHEEL_action1_sub1_enabled",
     "CHECKBOX",
-    ["Use Custom Subcommand (Get Up)", "Enable custom subcommand for STEALTH & HOLD FIRE > Get Up"],
-    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
+    ["Use Custom Subcommand (Match my stance)", "Enable custom subcommand for PRONE > Match my stance"],
+    [_category, "Section 1 - PRONE > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -379,8 +379,8 @@ private _category = "Command Wheel";
     "CMDWHEEL_action1_sub1_name",
     "EDITBOX",
     ["Subcommand Name", "Display name for this subcommand"],
-    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
-    "Get Up",
+    [_category, "Section 1 - PRONE > Subcommands"],
+    "Match my stance",
     1
 ] call CBA_fnc_addSetting;
 
@@ -388,17 +388,17 @@ private _category = "Command Wheel";
     "CMDWHEEL_action1_sub1_code",
     "EDITBOX",
     ["Subcommand Code", "SQF code to execute"],
-    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
+    [_category, "Section 1 - PRONE > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Section 1 - Subsection 2 (Match my stance)
+// Section 1 - Subsection 2 (Find cover)
 [
     "CMDWHEEL_action1_sub2_enabled",
     "CHECKBOX",
-    ["Use Custom Subcommand (Match my stance)", "Enable custom subcommand for STEALTH & HOLD FIRE > Match my stance"],
-    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
+    ["Use Custom Subcommand (Find cover)", "Enable custom subcommand for PRONE > Find cover"],
+    [_category, "Section 1 - PRONE > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -407,8 +407,8 @@ private _category = "Command Wheel";
     "CMDWHEEL_action1_sub2_name",
     "EDITBOX",
     ["Subcommand Name", "Display name for this subcommand"],
-    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
-    "Match my stance",
+    [_category, "Section 1 - PRONE > Subcommands"],
+    "Find cover",
     1
 ] call CBA_fnc_addSetting;
 
@@ -416,17 +416,17 @@ private _category = "Command Wheel";
     "CMDWHEEL_action1_sub2_code",
     "EDITBOX",
     ["Subcommand Code", "SQF code to execute"],
-    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
+    [_category, "Section 1 - PRONE > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Section 1 - Subsection 3 (Find cover)
+// Section 1 - Subsection 3 (Prone)
 [
     "CMDWHEEL_action1_sub3_enabled",
     "CHECKBOX",
-    ["Use Custom Subcommand (Find cover)", "Enable custom subcommand for STEALTH & HOLD FIRE > Find cover"],
-    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
+    ["Use Custom Subcommand (Prone)", "Enable custom subcommand for PRONE > Prone"],
+    [_category, "Section 1 - PRONE > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -435,8 +435,8 @@ private _category = "Command Wheel";
     "CMDWHEEL_action1_sub3_name",
     "EDITBOX",
     ["Subcommand Name", "Display name for this subcommand"],
-    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
-    "Find cover",
+    [_category, "Section 1 - PRONE > Subcommands"],
+    "Prone",
     1
 ] call CBA_fnc_addSetting;
 
@@ -444,17 +444,17 @@ private _category = "Command Wheel";
     "CMDWHEEL_action1_sub3_code",
     "EDITBOX",
     ["Subcommand Code", "SQF code to execute"],
-    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
+    [_category, "Section 1 - PRONE > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Section 2 - Subsection 0 (Forced suppressive fire)
+// Section 2 - Subsection 0 (Alert)
 [
     "CMDWHEEL_action2_sub0_enabled",
     "CHECKBOX",
-    ["Use Custom Subcommand (Forced suppressive fire)", "Enable custom subcommand for SUPPRESSIVE FIRE > Forced suppressive fire"],
-    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
+    ["Use Custom Subcommand (Alert)", "Enable custom subcommand for STEALTH > Alert"],
+    [_category, "Section 2 - STEALTH > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -463,8 +463,8 @@ private _category = "Command Wheel";
     "CMDWHEEL_action2_sub0_name",
     "EDITBOX",
     ["Subcommand Name", "Display name for this subcommand"],
-    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
-    "Forced suppressive fire",
+    [_category, "Section 2 - STEALTH > Subcommands"],
+    "Alert",
     1
 ] call CBA_fnc_addSetting;
 
@@ -472,7 +472,7 @@ private _category = "Command Wheel";
     "CMDWHEEL_action2_sub0_code",
     "EDITBOX",
     ["Subcommand Code", "SQF code to execute"],
-    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
+    [_category, "Section 2 - STEALTH > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
@@ -481,8 +481,8 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action2_sub1_enabled",
     "CHECKBOX",
-    ["Use Custom Subcommand (Target enemy)", "Enable custom subcommand for SUPPRESSIVE FIRE > Target enemy"],
-    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
+    ["Use Custom Subcommand (Target enemy)", "Enable custom subcommand for STEALTH > Target enemy"],
+    [_category, "Section 2 - STEALTH > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -491,7 +491,7 @@ private _category = "Command Wheel";
     "CMDWHEEL_action2_sub1_name",
     "EDITBOX",
     ["Subcommand Name", "Display name for this subcommand"],
-    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
+    [_category, "Section 2 - STEALTH > Subcommands"],
     "Target enemy",
     1
 ] call CBA_fnc_addSetting;
@@ -500,7 +500,7 @@ private _category = "Command Wheel";
     "CMDWHEEL_action2_sub1_code",
     "EDITBOX",
     ["Subcommand Code", "SQF code to execute"],
-    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
+    [_category, "Section 2 - STEALTH > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
@@ -509,8 +509,8 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action2_sub2_enabled",
     "CHECKBOX",
-    ["Use Custom Subcommand (Heal soldier)", "Enable custom subcommand for SUPPRESSIVE FIRE > Heal soldier"],
-    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
+    ["Use Custom Subcommand (Heal soldier)", "Enable custom subcommand for STEALTH > Heal soldier"],
+    [_category, "Section 2 - STEALTH > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -519,7 +519,7 @@ private _category = "Command Wheel";
     "CMDWHEEL_action2_sub2_name",
     "EDITBOX",
     ["Subcommand Name", "Display name for this subcommand"],
-    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
+    [_category, "Section 2 - STEALTH > Subcommands"],
     "Heal soldier",
     1
 ] call CBA_fnc_addSetting;
@@ -528,7 +528,7 @@ private _category = "Command Wheel";
     "CMDWHEEL_action2_sub2_code",
     "EDITBOX",
     ["Subcommand Code", "SQF code to execute"],
-    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
+    [_category, "Section 2 - STEALTH > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
@@ -537,8 +537,8 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action2_sub3_enabled",
     "CHECKBOX",
-    ["Use Custom Subcommand (Disengage)", "Enable custom subcommand for SUPPRESSIVE FIRE > Disengage"],
-    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
+    ["Use Custom Subcommand (Disengage)", "Enable custom subcommand for STEALTH > Disengage"],
+    [_category, "Section 2 - STEALTH > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -547,7 +547,7 @@ private _category = "Command Wheel";
     "CMDWHEEL_action2_sub3_name",
     "EDITBOX",
     ["Subcommand Name", "Display name for this subcommand"],
-    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
+    [_category, "Section 2 - STEALTH > Subcommands"],
     "Disengage",
     1
 ] call CBA_fnc_addSetting;
@@ -556,7 +556,7 @@ private _category = "Command Wheel";
     "CMDWHEEL_action2_sub3_code",
     "EDITBOX",
     ["Subcommand Code", "SQF code to execute"],
-    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
+    [_category, "Section 2 - STEALTH > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
@@ -669,6 +669,118 @@ private _category = "Command Wheel";
     "EDITBOX",
     ["Subcommand Code", "SQF code to execute"],
     [_category, "Section 3 - COLUMN > Subcommands"],
+    "",
+    1
+] call CBA_fnc_addSetting;
+
+// Section 4 - Subsection 0 (Forced suppressive fire)
+[
+    "CMDWHEEL_action4_sub0_enabled",
+    "CHECKBOX",
+    ["Use Custom Subcommand (Forced suppressive fire)", "Enable custom subcommand for SUPPRESSIVE FIRE > Forced suppressive fire"],
+    [_category, "Section 4 - SUPPRESSIVE FIRE > Subcommands"],
+    false,
+    1
+] call CBA_fnc_addSetting;
+
+[
+    "CMDWHEEL_action4_sub0_name",
+    "EDITBOX",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 4 - SUPPRESSIVE FIRE > Subcommands"],
+    "Forced suppressive fire",
+    1
+] call CBA_fnc_addSetting;
+
+[
+    "CMDWHEEL_action4_sub0_code",
+    "EDITBOX",
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 4 - SUPPRESSIVE FIRE > Subcommands"],
+    "",
+    1
+] call CBA_fnc_addSetting;
+
+// Section 4 - Subsection 1 (Target enemy)
+[
+    "CMDWHEEL_action4_sub1_enabled",
+    "CHECKBOX",
+    ["Use Custom Subcommand (Target enemy)", "Enable custom subcommand for SUPPRESSIVE FIRE > Target enemy"],
+    [_category, "Section 4 - SUPPRESSIVE FIRE > Subcommands"],
+    false,
+    1
+] call CBA_fnc_addSetting;
+
+[
+    "CMDWHEEL_action4_sub1_name",
+    "EDITBOX",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 4 - SUPPRESSIVE FIRE > Subcommands"],
+    "Target enemy",
+    1
+] call CBA_fnc_addSetting;
+
+[
+    "CMDWHEEL_action4_sub1_code",
+    "EDITBOX",
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 4 - SUPPRESSIVE FIRE > Subcommands"],
+    "",
+    1
+] call CBA_fnc_addSetting;
+
+// Section 4 - Subsection 2 (Heal soldier)
+[
+    "CMDWHEEL_action4_sub2_enabled",
+    "CHECKBOX",
+    ["Use Custom Subcommand (Heal soldier)", "Enable custom subcommand for SUPPRESSIVE FIRE > Heal soldier"],
+    [_category, "Section 4 - SUPPRESSIVE FIRE > Subcommands"],
+    false,
+    1
+] call CBA_fnc_addSetting;
+
+[
+    "CMDWHEEL_action4_sub2_name",
+    "EDITBOX",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 4 - SUPPRESSIVE FIRE > Subcommands"],
+    "Heal soldier",
+    1
+] call CBA_fnc_addSetting;
+
+[
+    "CMDWHEEL_action4_sub2_code",
+    "EDITBOX",
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 4 - SUPPRESSIVE FIRE > Subcommands"],
+    "",
+    1
+] call CBA_fnc_addSetting;
+
+// Section 4 - Subsection 3 (Disengage)
+[
+    "CMDWHEEL_action4_sub3_enabled",
+    "CHECKBOX",
+    ["Use Custom Subcommand (Disengage)", "Enable custom subcommand for SUPPRESSIVE FIRE > Disengage"],
+    [_category, "Section 4 - SUPPRESSIVE FIRE > Subcommands"],
+    false,
+    1
+] call CBA_fnc_addSetting;
+
+[
+    "CMDWHEEL_action4_sub3_name",
+    "EDITBOX",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 4 - SUPPRESSIVE FIRE > Subcommands"],
+    "Disengage",
+    1
+] call CBA_fnc_addSetting;
+
+[
+    "CMDWHEEL_action4_sub3_code",
+    "EDITBOX",
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 4 - SUPPRESSIVE FIRE > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;

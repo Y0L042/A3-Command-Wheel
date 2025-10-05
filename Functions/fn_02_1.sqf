@@ -1,5 +1,5 @@
 /*
- * Wrapper for: Suppressive fire > Target enemy
+ * Wrapper for: Stealth > Target enemy
  * Calls: fn_targetEnemy.sqf
  */
 

@@ -1,5 +1,5 @@
 /*
- * Wrapper for: Suppressive fire > Heal soldier
+ * Wrapper for: Stealth > Heal soldier
  * Calls: fn_healSoldier.sqf
  */
 

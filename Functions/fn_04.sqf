@@ -1,7 +1,8 @@
 /*
- * Empty command slot 04
+ * Wrapper for: Suppressive fire
+ * Calls: fn_suppressiveFire.sqf
  */
 
 params ["_caller"];
 
-// No command assigned
+_caller call CMDWHEEL_fnc_suppressiveFire;

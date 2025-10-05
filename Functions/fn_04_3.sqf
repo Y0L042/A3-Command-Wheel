@@ -1,7 +1,8 @@
 /*
- * Empty sub-command slot 04_3
+ * Wrapper for: Suppressive fire > Disengage
+ * Calls: fn_disengage.sqf
  */
 
 params ["_caller"];
 
-// No command assigned
+_caller call CMDWHEEL_fnc_disengage;

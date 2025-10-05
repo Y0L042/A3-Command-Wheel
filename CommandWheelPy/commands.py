@@ -25,48 +25,48 @@ COMMANDS = {
                 "command": "fn_gogogo.sqf"
             },
             3: {
-                "name": "Teleport to me",
-                "hint": "hint 'Teleport to me'",
-                "command": "fn_teleportToMe.sqf"
+                "name": "Garrison",
+                "hint": "hint 'Garrison'",
+                "command": "fn_garrison.sqf"
             }
         }
     },
     1: {
-        "name": "Stealth & Hold Fire",
-        "hint": "hint 'Stealth & Hold Fire'",
-        "command": "fn_stealthHoldFire.sqf",
+        "name": "Prone",
+        "hint": "hint 'Prone'",
+        "command": "fn_prone.sqf",
         "subs": {
             0: {
-                "name": "Prone",
-                "hint": "hint 'Prone'",
-                "command": "fn_prone.sqf"
-            },
-            1: {
                 "name": "Get Up",
                 "hint": "hint 'Get Up'",
                 "command": "fn_getUp.sqf"
             },
-            2: {
+            1: {
                 "name": "Match my stance",
                 "hint": "hint 'Match my stance'",
                 "command": "fn_matchStance.sqf"
             },
-            3: {
+            2: {
                 "name": "Find cover",
                 "hint": "hint 'Find cover'",
                 "command": "fn_findCover.sqf"
-            }
+            },
+            3: {
+                "name": "Prone",
+                "hint": "hint 'Prone'",
+                "command": "fn_prone.sqf"
+            },
         }
     },
     2: {
-        "name": "Suppressive fire",
-        "hint": "hint 'Suppressive fire'",
-        "command": "fn_suppressiveFire.sqf",
+        "name": "Stealth",
+        "hint": "hint 'Stealth'",
+        "command": "fn_stealthHoldFire.sqf",  
         "subs": {
             0: {
-                "name": "Forced suppressive fire",
-                "hint": "hint 'Forced suppressive fire'",
-                "command": "fn_forcedSuppressiveFire.sqf"
+                "name": "Alert",
+                "hint": "hint 'Alert'",
+                "command": "fn_alert.sqf"
             },
             1: {
                 "name": "Target enemy",
@@ -111,5 +111,37 @@ COMMANDS = {
                 "command": "fn_line.sqf"
             }
         }
+    },
+    4: {
+        "name": "Suppressive fire",
+        "hint": "hint 'Suppressive fire'",
+        "command": "fn_suppressiveFire.sqf",
+        "subs": {
+            0: {
+                "name": "Forced suppressive fire",
+                "hint": "hint 'Forced suppressive fire'",
+                "command": "fn_forcedSuppressiveFire.sqf"
+            },
+            1: {
+                "name": "Target enemy",
+                "hint": "hint 'Target enemy'",
+                "command": "fn_targetEnemy.sqf"
+            },
+            2: {
+                "name": "Heal soldier",
+                "hint": "hint 'Heal soldier'",
+                "command": "fn_healSoldier.sqf"
+            },
+            3: {
+                "name": "Disengage",
+                "hint": "hint 'Disengage'",
+                "command": "fn_disengage.sqf"
+            }
+        }
+    },
+    7: {
+        "name": "Teleport to me",
+        "hint": "hint 'Teleport to me'",
+        "command": "fn_teleportToMe.sqf"
     }
 }

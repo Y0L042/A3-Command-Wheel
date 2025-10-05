@@ -22,6 +22,14 @@ class CfgFunctions {
             class hold {};
             class regroup {};
             class moveThere {};
+            class gogogo {};
+            class teleportToMe {};
+            class prone {};
+            class getUp {};
+            class matchStance {};
+            class stealthHoldFire {};
+            class alert {};
+            class garrison {};
             
             // Wrapper functions (main sections 00-07)
             // Note: These correspond to hold, stealthHoldFire, suppressiveFire, column, etc.

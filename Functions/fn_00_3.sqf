@@ -1,8 +1,8 @@
 /*
- * Wrapper for: Hold > Teleport to me
- * Calls: fn_teleportToMe.sqf
+ * Wrapper for: Hold > Garrison
+ * Calls: fn_garrison.sqf
  */
 
 params ["_caller"];
 
-_caller call CMDWHEEL_fnc_teleportToMe;
+_caller call CMDWHEEL_fnc_garrison;
