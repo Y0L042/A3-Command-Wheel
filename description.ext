@@ -34,6 +34,55 @@ class CfgFunctions {
             class wheelClick {};
             class load {};
             class unload {};
+            class executeAction {};
+            
+            // Section 0 (MOVE) subcommands
+            class 00_sub0 {};
+            class 00_sub1 {};
+            class 00_sub2 {};
+            class 00_sub3 {};
+            
+            // Section 1 (FLANK) subcommands
+            class 01_sub0 {};
+            class 01_sub1 {};
+            class 01_sub2 {};
+            class 01_sub3 {};
+            
+            // Section 2 (FOLLOW) subcommands
+            class 02_sub0 {};
+            class 02_sub1 {};
+            class 02_sub2 {};
+            class 02_sub3 {};
+            
+            // Section 3 (SUPPRESS) subcommands
+            class 03_sub0 {};
+            class 03_sub1 {};
+            class 03_sub2 {};
+            class 03_sub3 {};
+            
+            // Section 4 (STOP) subcommands
+            class 04_sub0 {};
+            class 04_sub1 {};
+            class 04_sub2 {};
+            class 04_sub3 {};
+            
+            // Section 5 (REGROUP) subcommands
+            class 05_sub0 {};
+            class 05_sub1 {};
+            class 05_sub2 {};
+            class 05_sub3 {};
+            
+            // Section 6 (COVER) subcommands
+            class 06_sub0 {};
+            class 06_sub1 {};
+            class 06_sub2 {};
+            class 06_sub3 {};
+            
+            // Section 7 (ADVANCE) subcommands
+            class 07_sub0 {};
+            class 07_sub1 {};
+            class 07_sub2 {};
+            class 07_sub3 {};
         };
     };
 };

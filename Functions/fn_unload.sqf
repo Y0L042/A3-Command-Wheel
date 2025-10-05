@@ -11,8 +11,20 @@ if (_ehFrame != -1) then {
 };
 
 // Remove MouseButtonDown event handler
-private _ehClick = uiNamespace getVariable ['CommandWheel_MouseEH', -1];
-if (_ehClick != -1) then {
-    (findDisplay 46) displayRemoveEventHandler ['MouseButtonDown', _ehClick];
-    uiNamespace setVariable ['CommandWheel_MouseEH', -1];
+private _ehMouseDown = uiNamespace getVariable ['CommandWheel_MouseDownEH', -1];
+if (_ehMouseDown != -1) then {
+    (findDisplay 46) displayRemoveEventHandler ['MouseButtonDown', _ehMouseDown];
+    uiNamespace setVariable ['CommandWheel_MouseDownEH', -1];
 };
+
+// Remove MouseButtonUp event handler
+private _ehMouseUp = uiNamespace getVariable ['CommandWheel_MouseUpEH', -1];
+if (_ehMouseUp != -1) then {
+    (findDisplay 46) displayRemoveEventHandler ['MouseButtonUp', _ehMouseUp];
+    uiNamespace setVariable ['CommandWheel_MouseUpEH', -1];
+};
+
+// Reset mouse state variables
+uiNamespace setVariable ['CommandWheel_MouseButtonHeld', false];
+uiNamespace setVariable ['CommandWheel_LockedSection', -1];
+uiNamespace setVariable ['CommandWheel_MouseDownTime', -1];

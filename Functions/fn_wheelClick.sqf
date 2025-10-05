@@ -1,20 +1,47 @@
 // Execute the selected command
-// _this = selected section index (0-7)
+// _this can be:
+//   - Single number (selected section index 0-7) for main commands
+//   - Array [section, subsection] for subcommands
+
 private _selected = _this;
+private _isSubcommand = false;
+private _subsection = -1;
 
-// // Map section index to command function
-// private _commands = [
-//     CMDWHEEL_fnc_00,    // 0 - Top          NNE
-//     CMDWHEEL_fnc_01,    // 1 - Top Right    NEE
-//     CMDWHEEL_fnc_02,    // 2 - Right        SEE
-//     CMDWHEEL_fnc_03,    // 3 - Bottom Right SSE
-//     CMDWHEEL_fnc_04,    // 4 - Bottom       SSW
-//     CMDWHEEL_fnc_05,    // 5 - Bottom Left  SWW
-//     CMDWHEEL_fnc_06,    // 6 - Left         NWW
-//     CMDWHEEL_fnc_07     // 7 - Top Left     NNW
-// ];
+// Check if this is a subcommand (array format)
+if (_selected isEqualType []) then {
+    _subsection = _selected select 1;
+    _selected = _selected select 0;
+    _isSubcommand = true;
+};
 
-// // Execute the selected command
-// call (_commands select _selected);
-
-[_this] call CMDWHEEL_fnc_executeAction;
+if (_isSubcommand) then {
+    // Execute subcommand
+    systemChat format ["Executing subcommand: Section %1, Sub %2", _selected, _subsection];
+    
+    // Check for custom subcommand code
+    private _useCustom = missionNamespace getVariable [format ["CMDWHEEL_action%1_sub%2_enabled", _selected, _subsection], false];
+    private _customCode = missionNamespace getVariable [format ["CMDWHEEL_action%1_sub%2_code", _selected, _subsection], ""];
+    
+    if (_useCustom && _customCode != "") then {
+        try {
+            call compile _customCode;
+        } catch {
+            systemChat format ["Command Wheel Error: Failed to execute subcommand %1-%2", _selected, _subsection];
+            systemChat format ["Error: %1", _exception];
+        };
+    } else {
+        // Execute default subcommand function if it exists
+        private _funcName = format ["CMDWHEEL_fnc_%1_sub%2", _selected, _subsection];
+        private _func = missionNamespace getVariable [_funcName, {}];
+        
+        if (str _func != "{}") then {
+            call _func;
+        } else {
+            // Fallback: show message if function not defined
+            systemChat format ["Subcommand %1-%2 (function not defined: %3)", _selected, _subsection, _funcName];
+        };
+    };
+} else {
+    // Execute main command
+    [_selected] call CMDWHEEL_fnc_executeAction;
+};

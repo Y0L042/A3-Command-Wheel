@@ -14,8 +14,6 @@ _playerGrp setCombatMode "RED";
 
 hint "HOLD command issued";
 // Command all units to hold position
-{
-    _x commandStop true;
-} forEach (units _playerGrp);
+
 
 hint "HOLD command issued";
