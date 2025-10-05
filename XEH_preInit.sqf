@@ -5,7 +5,7 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action0_enabled",
     "CHECKBOX",
-    ["Use Custom Action (MOVE)", "Enable custom script for MOVE action"],
+    ["Use Custom Action (MOVE)", "Enable custom action for MOVE"],
     [_category, "Section 0 - MOVE"],
     false,
     1
@@ -21,9 +21,9 @@ private _category = "Command Wheel";
 ] call CBA_fnc_addSetting;
 
 [
-    "CMDWHEEL_action0_script",
+    "CMDWHEEL_action0_code",
     "EDITBOX",
-    ["Script Path", "Path to .sqf file (e.g., 'scripts\myAction.sqf') or leave empty for default"],
+    ["Action Code", "SQF code to execute (e.g., 'hint 'Hello'') or script call (e.g., 'call myFunction' or '[] execVM 'myScript.sqf'')"],
     [_category, "Section 0 - MOVE"],
     "",
     1
@@ -33,7 +33,7 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action1_enabled",
     "CHECKBOX",
-    ["Use Custom Action (FLANK)", "Enable custom script for FLANK action"],
+    ["Use Custom Action (FLANK)", "Enable custom action for FLANK"],
     [_category, "Section 1 - FLANK"],
     false,
     1
@@ -49,9 +49,9 @@ private _category = "Command Wheel";
 ] call CBA_fnc_addSetting;
 
 [
-    "CMDWHEEL_action1_script",
+    "CMDWHEEL_action1_code",
     "EDITBOX",
-    ["Script Path", "Path to .sqf file or leave empty for default"],
+    ["Action Code", "SQF code to execute or script call"],
     [_category, "Section 1 - FLANK"],
     "",
     1
@@ -61,7 +61,7 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action2_enabled",
     "CHECKBOX",
-    ["Use Custom Action (FOLLOW)", "Enable custom script for FOLLOW action"],
+    ["Use Custom Action (FOLLOW)", "Enable custom action for FOLLOW"],
     [_category, "Section 2 - FOLLOW"],
     false,
     1
@@ -77,9 +77,9 @@ private _category = "Command Wheel";
 ] call CBA_fnc_addSetting;
 
 [
-    "CMDWHEEL_action2_script",
+    "CMDWHEEL_action2_code",
     "EDITBOX",
-    ["Script Path", "Path to .sqf file or leave empty for default"],
+    ["Action Code", "SQF code to execute or script call"],
     [_category, "Section 2 - FOLLOW"],
     "",
     1
@@ -89,7 +89,7 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action3_enabled",
     "CHECKBOX",
-    ["Use Custom Action (HOLD)", "Enable custom script for HOLD action"],
+    ["Use Custom Action (HOLD)", "Enable custom action for HOLD"],
     [_category, "Section 3 - HOLD"],
     false,
     1
@@ -105,9 +105,9 @@ private _category = "Command Wheel";
 ] call CBA_fnc_addSetting;
 
 [
-    "CMDWHEEL_action3_script",
+    "CMDWHEEL_action3_code",
     "EDITBOX",
-    ["Script Path", "Path to .sqf file or leave empty for default"],
+    ["Action Code", "SQF code to execute or script call"],
     [_category, "Section 3 - HOLD"],
     "",
     1
@@ -117,7 +117,7 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action4_enabled",
     "CHECKBOX",
-    ["Use Custom Action (STOP)", "Enable custom script for STOP action"],
+    ["Use Custom Action (STOP)", "Enable custom action for STOP"],
     [_category, "Section 4 - STOP"],
     false,
     1
@@ -133,9 +133,9 @@ private _category = "Command Wheel";
 ] call CBA_fnc_addSetting;
 
 [
-    "CMDWHEEL_action4_script",
+    "CMDWHEEL_action4_code",
     "EDITBOX",
-    ["Script Path", "Path to .sqf file or leave empty for default"],
+    ["Action Code", "SQF code to execute or script call"],
     [_category, "Section 4 - STOP"],
     "",
     1
@@ -145,7 +145,7 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action5_enabled",
     "CHECKBOX",
-    ["Use Custom Action (REGROUP)", "Enable custom script for REGROUP action"],
+    ["Use Custom Action (REGROUP)", "Enable custom action for REGROUP"],
     [_category, "Section 5 - REGROUP"],
     false,
     1
@@ -161,9 +161,9 @@ private _category = "Command Wheel";
 ] call CBA_fnc_addSetting;
 
 [
-    "CMDWHEEL_action5_script",
+    "CMDWHEEL_action5_code",
     "EDITBOX",
-    ["Script Path", "Path to .sqf file or leave empty for default"],
+    ["Action Code", "SQF code to execute or script call"],
     [_category, "Section 5 - REGROUP"],
     "",
     1
@@ -173,7 +173,7 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action6_enabled",
     "CHECKBOX",
-    ["Use Custom Action (COVER)", "Enable custom script for COVER action"],
+    ["Use Custom Action (COVER)", "Enable custom action for COVER"],
     [_category, "Section 6 - COVER"],
     false,
     1
@@ -189,9 +189,9 @@ private _category = "Command Wheel";
 ] call CBA_fnc_addSetting;
 
 [
-    "CMDWHEEL_action6_script",
+    "CMDWHEEL_action6_code",
     "EDITBOX",
-    ["Script Path", "Path to .sqf file or leave empty for default"],
+    ["Action Code", "SQF code to execute or script call"],
     [_category, "Section 6 - COVER"],
     "",
     1
@@ -201,7 +201,7 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action7_enabled",
     "CHECKBOX",
-    ["Use Custom Action (ADVANCE)", "Enable custom script for ADVANCE action"],
+    ["Use Custom Action (ADVANCE)", "Enable custom action for ADVANCE"],
     [_category, "Section 7 - ADVANCE"],
     false,
     1
@@ -217,9 +217,9 @@ private _category = "Command Wheel";
 ] call CBA_fnc_addSetting;
 
 [
-    "CMDWHEEL_action7_script",
+    "CMDWHEEL_action7_code",
     "EDITBOX",
-    ["Script Path", "Path to .sqf file or leave empty for default"],
+    ["Action Code", "SQF code to execute or script call"],
     [_category, "Section 7 - ADVANCE"],
     "",
     1

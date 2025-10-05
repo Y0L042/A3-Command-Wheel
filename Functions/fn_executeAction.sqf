@@ -1,28 +1,34 @@
 params ["_actionIndex"];
 
+systemChat "Executing action...";
+
 // Get settings for this action
 private _useCustom = missionNamespace getVariable [format ["CMDWHEEL_action%1_enabled", _actionIndex], false];
-private _scriptPath = missionNamespace getVariable [format ["CMDWHEEL_action%1_script", _actionIndex], ""];
+private _customCode = missionNamespace getVariable [format ["CMDWHEEL_action%1_code", _actionIndex], ""];
 
-if (_useCustom && _scriptPath != "") then {
-    // Execute custom script
-    if (fileExists _scriptPath) then {
-        call compile preprocessFileLineNumbers _scriptPath;
-    } else {
-        systemChat format ["Command Wheel: Script not found: %1", _scriptPath];
+if (_useCustom && _customCode != "") then {
+    systemChat "Executing CUSTOM action";
+    // Execute custom code
+    try {
+        call compile _customCode;
+    } catch {
+        systemChat format ["Command Wheel Error: Failed to execute action %1", _actionIndex];
+        systemChat format ["Error: %1", _exception];
     };
 } else {
     // Execute default action
     private _defaultFunctions = [
-        CMDWHEEL_fnc_move,
-        CMDWHEEL_fnc_flank,
-        CMDWHEEL_fnc_follow,
-        CMDWHEEL_fnc_hold,
-        CMDWHEEL_fnc_stop,
-        CMDWHEEL_fnc_regroup,
-        CMDWHEEL_fnc_cover,
-        CMDWHEEL_fnc_advance
+        CMDWHEEL_fnc_00,    // 0 - Top          NNE
+        CMDWHEEL_fnc_01,    // 1 - Top Right    NEE
+        CMDWHEEL_fnc_02,    // 2 - Right        SEE
+        CMDWHEEL_fnc_03,    // 3 - Bottom Right SSE
+        CMDWHEEL_fnc_04,    // 4 - Bottom       SSW
+        CMDWHEEL_fnc_05,    // 5 - Bottom Left  SWW
+        CMDWHEEL_fnc_06,    // 6 - Left         NWW
+        CMDWHEEL_fnc_07     // 7 - Top Left     NNW
     ];
     
-    call (_defaultFunctions select _actionIndex);
+    if (_actionIndex >= 0 && _actionIndex < count _defaultFunctions) then {
+        call (_defaultFunctions select _actionIndex);
+    };
 };
