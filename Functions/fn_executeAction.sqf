@@ -1,7 +1,5 @@
 params ["_actionIndex"];
 
-systemChat "Executing action...";
-
 // Get settings for this action
 private _useCustom = missionNamespace getVariable [format ["CMDWHEEL_action%1_enabled", _actionIndex], false];
 private _customCode = missionNamespace getVariable [format ["CMDWHEEL_action%1_code", _actionIndex], ""];
@@ -29,6 +27,6 @@ if (_useCustom && _customCode != "") then {
     ];
     
     if (_actionIndex >= 0 && _actionIndex < count _defaultFunctions) then {
-        call (_defaultFunctions select _actionIndex);
+        player call (_defaultFunctions select _actionIndex);
     };
 };

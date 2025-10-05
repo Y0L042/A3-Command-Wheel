@@ -6,13 +6,25 @@ params ["_display"];
 uiNamespace setVariable ['CommandWheel_Display', _display];
 call CMDWHEEL_fnc_wheelLoop;
 
-// Update label texts from settings
+// Update main label texts from settings
 for "_i" from 0 to 7 do {
     private _labelCtrl = _display displayCtrl (9020 + _i);
     private _customName = missionNamespace getVariable [format ["CMDWHEEL_action%1_name", _i], ""];
     
     if (_customName != "") then {
         _labelCtrl ctrlSetText _customName;
+    };
+};
+
+// Update sublabel texts from settings
+for "_i" from 0 to 7 do {
+    for "_j" from 0 to 3 do {
+        private _labelCtrl = _display displayCtrl (9200 + _i * 4 + _j);
+        private _customName = missionNamespace getVariable [format ["CMDWHEEL_action%1_sub%2_name", _i, _j], ""];
+        
+        if (_customName != "") then {
+            _labelCtrl ctrlSetText _customName;
+        };
     };
 };
 
@@ -62,8 +74,8 @@ private _ehMouseUp = (findDisplay 46) displayAddEventHandler [
             private _mouseDownTime = uiNamespace getVariable ['CommandWheel_MouseDownTime', -1];
             private _holdDuration = time - _mouseDownTime;
             
-            // Hold threshold: if released within 0.4 seconds, treat as quick click (main command only)
-            private _holdThreshold = 0.4;
+            // Hold threshold: if released within X seconds, treat as quick click (main command only)
+            private _holdThreshold = 0.2;
             
             // Reset mouse button state
             uiNamespace setVariable ['CommandWheel_MouseButtonHeld', false];
@@ -98,31 +110,6 @@ private _ehKey = (findDisplay 46) displayAddEventHandler [
             uiNamespace setVariable ['CommandWheel_LockedSection', -1];
             closeDialog 9000;
             true
-        } else {
-            if (_key == 57) then {
-                private _selected = uiNamespace getVariable ['CommandWheel_Selected', -1];
-                private _showSubMenu = uiNamespace getVariable ['CommandWheel_ShowSubMenu', false];
-                private _selectedSub = uiNamespace getVariable ['CommandWheel_SelectedSub', -1];
-                
-                // Reset mouse button state
-                uiNamespace setVariable ['CommandWheel_MouseButtonHeld', false];
-                uiNamespace setVariable ['CommandWheel_LockedSection', -1];
-                uiNamespace setVariable ['CommandWheel_MouseDownTime', -1];
-                
-                if (_selected >= 0) then {
-                    if (_showSubMenu && _selectedSub >= 0) then {
-                        // Execute subcommand
-                        [_selected, _selectedSub] call CMDWHEEL_fnc_wheelClick;
-                    } else {
-                        // Execute main command
-                        _selected call CMDWHEEL_fnc_wheelClick;
-                    };
-                    closeDialog 9000;
-                };
-                true
-            } else {
-                false
-            };
         };
     }
 ];

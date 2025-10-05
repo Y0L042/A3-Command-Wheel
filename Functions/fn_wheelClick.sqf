@@ -31,11 +31,13 @@ if (_isSubcommand) then {
         };
     } else {
         // Execute default subcommand function if it exists
-        private _funcName = format ["CMDWHEEL_fnc_%1_sub%2", _selected, _subsection];
+        // Format section number with leading zero (0 -> "00", 1 -> "01", etc.)
+        private _sectionStr = if (_selected < 10) then {format ["0%1", _selected]} else {str _selected};
+        private _funcName = format ["CMDWHEEL_fnc_%1_%2", _sectionStr, _subsection];
         private _func = missionNamespace getVariable [_funcName, {}];
         
         if (str _func != "{}") then {
-            call _func;
+            player call _func;
         } else {
             // Fallback: show message if function not defined
             systemChat format ["Subcommand %1-%2 (function not defined: %3)", _selected, _subsection, _funcName];

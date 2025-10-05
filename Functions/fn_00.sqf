@@ -1,3 +1,8 @@
-call CMDWHEEL_fnc_move;
+/*
+ * Wrapper for: Hold
+ * Calls: fn_hold.sqf
+ */
 
-systemChat "Executed Action_00";
+params ["_caller"];
+
+_caller call CMDWHEEL_fnc_hold;

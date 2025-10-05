@@ -1,10 +1,18 @@
-// Get player's group
-private _playerGrp = group player;
-private _leader = leader _playerGrp;
+/*
+ * Implementation: fn_regroup.sqf
+ * 
+ * Add your command logic here
+ */
 
-// Make all units follow the leader (regroup)
-{
-    _x doFollow _leader;
-} forEach (units _playerGrp - [_leader]);
+params ["_caller"];
 
-hint "REGROUP command issued";
+hint "Regroup";
+
+// regroup.sqf
+// Usage: [group player] execVM "regroup.sqf";
+
+params ["_group"];
+
+units _group doFollow leader _group;
+
+systemChat format ["Command %1 called by %2", "fn_regroup.sqf", name _caller];

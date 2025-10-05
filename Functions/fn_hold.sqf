@@ -1,19 +1,19 @@
-// Get player's group// private _groupUnits = units group player - [player];
+/*
+ * Implementation: fn_hold.sqf
+ * 
+ * Add your command logic here
+ */
 
-private _playerGrp = group player;// {
+params ["_caller"];
 
-//     _x commandStop true;
+hint "Hold";
 
-// Set group to defensive stance// } forEach _groupUnits;
+// private _groupUnits = group player;
+private _groupUnits = units group player - [player];
+// {
+//     _x doMove (getPos _x);
+// } forEach _groupUnits;
 
-_playerGrp setBehaviour "COMBAT";
+doStop (units player);
 
-_playerGrp setSpeedMode "LIMITED";commandStop (units player);
-
-_playerGrp setCombatMode "RED";
-
-hint "HOLD command issued";
-// Command all units to hold position
-
-
-hint "HOLD command issued";
+systemChat format ["Command %1 called by %2", "fn_hold.sqf", name _caller];

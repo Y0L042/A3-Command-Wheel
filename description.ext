@@ -12,77 +12,73 @@ class CfgFunctions {
         tag = "CMDWHEEL";
         class Functions {
             file = "functions";
-            class 00 {};
-            class 01 {};
-            class 02 {};
-            class 03 {};
-            class 04 {};
-            class 05 {};
-            class 06 {};
-            class 07 {};
-
-            class move {};
-            class flank {};
-            class follow {};
-            class suppress {};
-            class stop {};
-            class regroup {};
-            class cover {};
-            class advance {};
-
+ 
             class wheelLoop {};
             class wheelClick {};
             class load {};
             class unload {};
             class executeAction {};
+
+            class hold {};
+            class regroup {};
+            class moveThere {};
             
-            // Section 0 (MOVE) subcommands
-            class 00_sub0 {};
-            class 00_sub1 {};
-            class 00_sub2 {};
-            class 00_sub3 {};
+            // Wrapper functions (main sections 00-07)
+            // Note: These correspond to hold, stealthHoldFire, suppressiveFire, column, etc.
+            class 00 {};
+            class 00_0 {};
+            class 00_1 {};
+            class 00_2 {};
+            class 00_3 {};
             
             // Section 1 (FLANK) subcommands
-            class 01_sub0 {};
-            class 01_sub1 {};
-            class 01_sub2 {};
-            class 01_sub3 {};
+            class 01 {};
+            class 01_0 {};
+            class 01_1 {};
+            class 01_2 {};
+            class 01_3 {};
             
             // Section 2 (FOLLOW) subcommands
-            class 02_sub0 {};
-            class 02_sub1 {};
-            class 02_sub2 {};
-            class 02_sub3 {};
+            class 02 {};
+            class 02_0 {};
+            class 02_1 {};
+            class 02_2 {};
+            class 02_3 {};
             
             // Section 3 (SUPPRESS) subcommands
-            class 03_sub0 {};
-            class 03_sub1 {};
-            class 03_sub2 {};
-            class 03_sub3 {};
+            class 03 {};
+            class 03_0 {};
+            class 03_1 {};
+            class 03_2 {};
+            class 03_3 {};
             
             // Section 4 (STOP) subcommands
-            class 04_sub0 {};
-            class 04_sub1 {};
-            class 04_sub2 {};
-            class 04_sub3 {};
+            class 04 {};
+            class 04_0 {};
+            class 04_1 {};
+            class 04_2 {};
+            class 04_3 {};
             
             // Section 5 (REGROUP) subcommands
-            class 05_sub0 {};
-            class 05_sub1 {};
-            class 05_sub2 {};
-            class 05_sub3 {};
+            class 05 {};
+            class 05_0 {};
+            class 05_1 {};
+            class 05_2 {};
+            class 05_3 {};
             
             // Section 6 (COVER) subcommands
-            class 06_sub0 {};
-            class 06_sub1 {};
-            class 06_sub2 {};
-            class 06_sub3 {};
+            class 06 {};
+            class 06_0 {};
+            class 06_1 {};
+            class 06_2 {};
+            class 06_3 {};
             
             // Section 7 (ADVANCE) subcommands
-            class 07_sub0 {};
-            class 07_sub1 {};
-            class 07_sub2 {};
-            class 07_sub3 {};
+            class 07 {};
+            class 07_0 {};
+            class 07_1 {};
+            class 07_2 {};
+            class 07_3 {};
         };
     };
 };

@@ -1,12 +1,12 @@
 // Register settings for each command wheel action
 private _category = "Command Wheel";
 
-// Section 0 - MOVE
+// Section 0 - HOLD
 [
     "CMDWHEEL_action0_enabled",
     "CHECKBOX",
-    ["Use Custom Action (MOVE)", "Enable custom action for MOVE"],
-    [_category, "Section 0 - MOVE"],
+    ["Use Custom Action (HOLD)", "Enable custom action for HOLD"],
+    [_category, "Section 0 - HOLD"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -15,26 +15,26 @@ private _category = "Command Wheel";
     "CMDWHEEL_action0_name",
     "EDITBOX",
     ["Action Name", "Display name for this action"],
-    [_category, "Section 0 - MOVE"],
-    "MOVE",
+    [_category, "Section 0 - HOLD"],
+    "Hold",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action0_code",
     "EDITBOX",
-    ["Action Code", "SQF code to execute (e.g., 'hint 'Hello'') or script call (e.g., 'call myFunction' or '[] execVM 'myScript.sqf'')"],
-    [_category, "Section 0 - MOVE"],
+    ["Action Code", "SQF code to execute (e.g., 'hint ''Hello''') or script call (e.g., 'call myFunction' or '[] execVM ''myScript.sqf''')"],
+    [_category, "Section 0 - HOLD"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Section 1 - FLANK
+// Section 1 - STEALTH & HOLD FIRE
 [
     "CMDWHEEL_action1_enabled",
     "CHECKBOX",
-    ["Use Custom Action (FLANK)", "Enable custom action for FLANK"],
-    [_category, "Section 1 - FLANK"],
+    ["Use Custom Action (STEALTH & HOLD FIRE)", "Enable custom action for STEALTH & HOLD FIRE"],
+    [_category, "Section 1 - STEALTH & HOLD FIRE"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -43,26 +43,26 @@ private _category = "Command Wheel";
     "CMDWHEEL_action1_name",
     "EDITBOX",
     ["Action Name", "Display name for this action"],
-    [_category, "Section 1 - FLANK"],
-    "FLANK",
+    [_category, "Section 1 - STEALTH & HOLD FIRE"],
+    "Stealth & Hold Fire",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action1_code",
     "EDITBOX",
-    ["Action Code", "SQF code to execute or script call"],
-    [_category, "Section 1 - FLANK"],
+    ["Action Code", "SQF code to execute (e.g., 'hint ''Hello''') or script call (e.g., 'call myFunction' or '[] execVM ''myScript.sqf''')"],
+    [_category, "Section 1 - STEALTH & HOLD FIRE"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Section 2 - FOLLOW
+// Section 2 - SUPPRESSIVE FIRE
 [
     "CMDWHEEL_action2_enabled",
     "CHECKBOX",
-    ["Use Custom Action (FOLLOW)", "Enable custom action for FOLLOW"],
-    [_category, "Section 2 - FOLLOW"],
+    ["Use Custom Action (SUPPRESSIVE FIRE)", "Enable custom action for SUPPRESSIVE FIRE"],
+    [_category, "Section 2 - SUPPRESSIVE FIRE"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -71,26 +71,26 @@ private _category = "Command Wheel";
     "CMDWHEEL_action2_name",
     "EDITBOX",
     ["Action Name", "Display name for this action"],
-    [_category, "Section 2 - FOLLOW"],
-    "FOLLOW",
+    [_category, "Section 2 - SUPPRESSIVE FIRE"],
+    "Suppressive fire",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action2_code",
     "EDITBOX",
-    ["Action Code", "SQF code to execute or script call"],
-    [_category, "Section 2 - FOLLOW"],
+    ["Action Code", "SQF code to execute (e.g., 'hint ''Hello''') or script call (e.g., 'call myFunction' or '[] execVM ''myScript.sqf''')"],
+    [_category, "Section 2 - SUPPRESSIVE FIRE"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Section 3 - HOLD
+// Section 3 - COLUMN
 [
     "CMDWHEEL_action3_enabled",
     "CHECKBOX",
-    ["Use Custom Action (HOLD)", "Enable custom action for HOLD"],
-    [_category, "Section 3 - HOLD"],
+    ["Use Custom Action (COLUMN)", "Enable custom action for COLUMN"],
+    [_category, "Section 3 - COLUMN"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -99,26 +99,26 @@ private _category = "Command Wheel";
     "CMDWHEEL_action3_name",
     "EDITBOX",
     ["Action Name", "Display name for this action"],
-    [_category, "Section 3 - HOLD"],
-    "HOLD",
+    [_category, "Section 3 - COLUMN"],
+    "Column",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action3_code",
     "EDITBOX",
-    ["Action Code", "SQF code to execute or script call"],
-    [_category, "Section 3 - HOLD"],
+    ["Action Code", "SQF code to execute (e.g., 'hint ''Hello''') or script call (e.g., 'call myFunction' or '[] execVM ''myScript.sqf''')"],
+    [_category, "Section 3 - COLUMN"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Section 4 - STOP
+// Section 4 - SECTION 4
 [
     "CMDWHEEL_action4_enabled",
     "CHECKBOX",
-    ["Use Custom Action (STOP)", "Enable custom action for STOP"],
-    [_category, "Section 4 - STOP"],
+    ["Use Custom Action (SECTION 4)", "Enable custom action for SECTION 4"],
+    [_category, "Section 4 - SECTION 4"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -127,26 +127,26 @@ private _category = "Command Wheel";
     "CMDWHEEL_action4_name",
     "EDITBOX",
     ["Action Name", "Display name for this action"],
-    [_category, "Section 4 - STOP"],
-    "STOP",
+    [_category, "Section 4 - SECTION 4"],
+    "Section 4",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action4_code",
     "EDITBOX",
-    ["Action Code", "SQF code to execute or script call"],
-    [_category, "Section 4 - STOP"],
+    ["Action Code", "SQF code to execute (e.g., 'hint ''Hello''') or script call (e.g., 'call myFunction' or '[] execVM ''myScript.sqf''')"],
+    [_category, "Section 4 - SECTION 4"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Section 5 - REGROUP
+// Section 5 - SECTION 5
 [
     "CMDWHEEL_action5_enabled",
     "CHECKBOX",
-    ["Use Custom Action (REGROUP)", "Enable custom action for REGROUP"],
-    [_category, "Section 5 - REGROUP"],
+    ["Use Custom Action (SECTION 5)", "Enable custom action for SECTION 5"],
+    [_category, "Section 5 - SECTION 5"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -155,26 +155,26 @@ private _category = "Command Wheel";
     "CMDWHEEL_action5_name",
     "EDITBOX",
     ["Action Name", "Display name for this action"],
-    [_category, "Section 5 - REGROUP"],
-    "REGROUP",
+    [_category, "Section 5 - SECTION 5"],
+    "Section 5",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action5_code",
     "EDITBOX",
-    ["Action Code", "SQF code to execute or script call"],
-    [_category, "Section 5 - REGROUP"],
+    ["Action Code", "SQF code to execute (e.g., 'hint ''Hello''') or script call (e.g., 'call myFunction' or '[] execVM ''myScript.sqf''')"],
+    [_category, "Section 5 - SECTION 5"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Section 6 - COVER
+// Section 6 - SECTION 6
 [
     "CMDWHEEL_action6_enabled",
     "CHECKBOX",
-    ["Use Custom Action (COVER)", "Enable custom action for COVER"],
-    [_category, "Section 6 - COVER"],
+    ["Use Custom Action (SECTION 6)", "Enable custom action for SECTION 6"],
+    [_category, "Section 6 - SECTION 6"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -183,26 +183,26 @@ private _category = "Command Wheel";
     "CMDWHEEL_action6_name",
     "EDITBOX",
     ["Action Name", "Display name for this action"],
-    [_category, "Section 6 - COVER"],
-    "COVER",
+    [_category, "Section 6 - SECTION 6"],
+    "Section 6",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action6_code",
     "EDITBOX",
-    ["Action Code", "SQF code to execute or script call"],
-    [_category, "Section 6 - COVER"],
+    ["Action Code", "SQF code to execute (e.g., 'hint ''Hello''') or script call (e.g., 'call myFunction' or '[] execVM ''myScript.sqf''')"],
+    [_category, "Section 6 - SECTION 6"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Section 7 - ADVANCE
+// Section 7 - SECTION 7
 [
     "CMDWHEEL_action7_enabled",
     "CHECKBOX",
-    ["Use Custom Action (ADVANCE)", "Enable custom action for ADVANCE"],
-    [_category, "Section 7 - ADVANCE"],
+    ["Use Custom Action (SECTION 7)", "Enable custom action for SECTION 7"],
+    [_category, "Section 7 - SECTION 7"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -211,26 +211,26 @@ private _category = "Command Wheel";
     "CMDWHEEL_action7_name",
     "EDITBOX",
     ["Action Name", "Display name for this action"],
-    [_category, "Section 7 - ADVANCE"],
-    "ADVANCE",
+    [_category, "Section 7 - SECTION 7"],
+    "Section 7",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action7_code",
     "EDITBOX",
-    ["Action Code", "SQF code to execute or script call"],
-    [_category, "Section 7 - ADVANCE"],
+    ["Action Code", "SQF code to execute (e.g., 'hint ''Hello''') or script call (e.g., 'call myFunction' or '[] execVM ''myScript.sqf''')"],
+    [_category, "Section 7 - SECTION 7"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Subsection 0-0 - MOVE: Wedge Formation
+// Section 0 - Subsection 0 (Regroup)
 [
     "CMDWHEEL_action0_sub0_enabled",
     "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for MOVE: Wedge Formation"],
-    [_category, "Section 0 - MOVE - Sub 0"],
+    ["Use Custom Subcommand (Regroup)", "Enable custom subcommand for HOLD > Regroup"],
+    [_category, "Section 0 - HOLD > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -238,27 +238,27 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action0_sub0_name",
     "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 0 - MOVE - Sub 0"],
-    "Wedge Formation",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 0 - HOLD > Subcommands"],
+    "Regroup",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action0_sub0_code",
     "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 0 - MOVE - Sub 0"],
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 0 - HOLD > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Subsection 0-1 - MOVE: Line Formation
+// Section 0 - Subsection 1 (Move there)
 [
     "CMDWHEEL_action0_sub1_enabled",
     "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for MOVE: Line Formation"],
-    [_category, "Section 0 - MOVE - Sub 1"],
+    ["Use Custom Subcommand (Move there)", "Enable custom subcommand for HOLD > Move there"],
+    [_category, "Section 0 - HOLD > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -266,27 +266,27 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action0_sub1_name",
     "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 0 - MOVE - Sub 1"],
-    "Line Formation",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 0 - HOLD > Subcommands"],
+    "Move there",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action0_sub1_code",
     "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 0 - MOVE - Sub 1"],
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 0 - HOLD > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Subsection 0-2 - MOVE: Column Formation
+// Section 0 - Subsection 2 (GoGoGo!)
 [
     "CMDWHEEL_action0_sub2_enabled",
     "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for MOVE: Column Formation"],
-    [_category, "Section 0 - MOVE - Sub 2"],
+    ["Use Custom Subcommand (GoGoGo!)", "Enable custom subcommand for HOLD > GoGoGo!"],
+    [_category, "Section 0 - HOLD > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -294,27 +294,27 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action0_sub2_name",
     "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 0 - MOVE - Sub 2"],
-    "Column Formation",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 0 - HOLD > Subcommands"],
+    "GoGoGo!",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action0_sub2_code",
     "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 0 - MOVE - Sub 2"],
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 0 - HOLD > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Subsection 0-3 - MOVE: Staggered Column
+// Section 0 - Subsection 3 (Teleport to me)
 [
     "CMDWHEEL_action0_sub3_enabled",
     "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for MOVE: Staggered Column"],
-    [_category, "Section 0 - MOVE - Sub 3"],
+    ["Use Custom Subcommand (Teleport to me)", "Enable custom subcommand for HOLD > Teleport to me"],
+    [_category, "Section 0 - HOLD > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -322,27 +322,27 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action0_sub3_name",
     "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 0 - MOVE - Sub 3"],
-    "Staggered Column",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 0 - HOLD > Subcommands"],
+    "Teleport to me",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action0_sub3_code",
     "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 0 - MOVE - Sub 3"],
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 0 - HOLD > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Subsection 1-0 - FLANK: Flank Left
+// Section 1 - Subsection 0 (Prone)
 [
     "CMDWHEEL_action1_sub0_enabled",
     "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for FLANK: Flank Left"],
-    [_category, "Section 1 - FLANK - Sub 0"],
+    ["Use Custom Subcommand (Prone)", "Enable custom subcommand for STEALTH & HOLD FIRE > Prone"],
+    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -350,27 +350,27 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action1_sub0_name",
     "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 1 - FLANK - Sub 0"],
-    "Flank Left",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
+    "Prone",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action1_sub0_code",
     "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 1 - FLANK - Sub 0"],
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Subsection 1-1 - FLANK: Flank Right
+// Section 1 - Subsection 1 (Get Up)
 [
     "CMDWHEEL_action1_sub1_enabled",
     "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for FLANK: Flank Right"],
-    [_category, "Section 1 - FLANK - Sub 1"],
+    ["Use Custom Subcommand (Get Up)", "Enable custom subcommand for STEALTH & HOLD FIRE > Get Up"],
+    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -378,27 +378,27 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action1_sub1_name",
     "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 1 - FLANK - Sub 1"],
-    "Flank Right",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
+    "Get Up",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action1_sub1_code",
     "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 1 - FLANK - Sub 1"],
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Subsection 1-2 - FLANK: Wide Left
+// Section 1 - Subsection 2 (Match my stance)
 [
     "CMDWHEEL_action1_sub2_enabled",
     "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for FLANK: Wide Left"],
-    [_category, "Section 1 - FLANK - Sub 2"],
+    ["Use Custom Subcommand (Match my stance)", "Enable custom subcommand for STEALTH & HOLD FIRE > Match my stance"],
+    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -406,27 +406,27 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action1_sub2_name",
     "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 1 - FLANK - Sub 2"],
-    "Wide Left",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
+    "Match my stance",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action1_sub2_code",
     "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 1 - FLANK - Sub 2"],
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Subsection 1-3 - FLANK: Wide Right
+// Section 1 - Subsection 3 (Find cover)
 [
     "CMDWHEEL_action1_sub3_enabled",
     "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for FLANK: Wide Right"],
-    [_category, "Section 1 - FLANK - Sub 3"],
+    ["Use Custom Subcommand (Find cover)", "Enable custom subcommand for STEALTH & HOLD FIRE > Find cover"],
+    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -434,27 +434,27 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action1_sub3_name",
     "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 1 - FLANK - Sub 3"],
-    "Wide Right",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
+    "Find cover",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action1_sub3_code",
     "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 1 - FLANK - Sub 3"],
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 1 - STEALTH & HOLD FIRE > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Subsection 2-0 - FOLLOW: Close Formation
+// Section 2 - Subsection 0 (Forced suppressive fire)
 [
     "CMDWHEEL_action2_sub0_enabled",
     "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for FOLLOW: Close Formation"],
-    [_category, "Section 2 - FOLLOW - Sub 0"],
+    ["Use Custom Subcommand (Forced suppressive fire)", "Enable custom subcommand for SUPPRESSIVE FIRE > Forced suppressive fire"],
+    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -462,27 +462,27 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action2_sub0_name",
     "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 2 - FOLLOW - Sub 0"],
-    "Close Formation",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
+    "Forced suppressive fire",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action2_sub0_code",
     "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 2 - FOLLOW - Sub 0"],
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Subsection 2-1 - FOLLOW: Dispersed Formation
+// Section 2 - Subsection 1 (Target enemy)
 [
     "CMDWHEEL_action2_sub1_enabled",
     "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for FOLLOW: Dispersed Formation"],
-    [_category, "Section 2 - FOLLOW - Sub 1"],
+    ["Use Custom Subcommand (Target enemy)", "Enable custom subcommand for SUPPRESSIVE FIRE > Target enemy"],
+    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -490,27 +490,27 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action2_sub1_name",
     "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 2 - FOLLOW - Sub 1"],
-    "Dispersed Formation",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
+    "Target enemy",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action2_sub1_code",
     "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 2 - FOLLOW - Sub 1"],
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Subsection 2-2 - FOLLOW: Stealth Follow
+// Section 2 - Subsection 2 (Heal soldier)
 [
     "CMDWHEEL_action2_sub2_enabled",
     "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for FOLLOW: Stealth Follow"],
-    [_category, "Section 2 - FOLLOW - Sub 2"],
+    ["Use Custom Subcommand (Heal soldier)", "Enable custom subcommand for SUPPRESSIVE FIRE > Heal soldier"],
+    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -518,27 +518,27 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action2_sub2_name",
     "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 2 - FOLLOW - Sub 2"],
-    "Stealth Follow",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
+    "Heal soldier",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action2_sub2_code",
     "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 2 - FOLLOW - Sub 2"],
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Subsection 2-3 - FOLLOW: Combat Ready
+// Section 2 - Subsection 3 (Disengage)
 [
     "CMDWHEEL_action2_sub3_enabled",
     "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for FOLLOW: Combat Ready"],
-    [_category, "Section 2 - FOLLOW - Sub 3"],
+    ["Use Custom Subcommand (Disengage)", "Enable custom subcommand for SUPPRESSIVE FIRE > Disengage"],
+    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -546,27 +546,27 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action2_sub3_name",
     "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 2 - FOLLOW - Sub 3"],
-    "Combat Ready",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
+    "Disengage",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action2_sub3_code",
     "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 2 - FOLLOW - Sub 3"],
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 2 - SUPPRESSIVE FIRE > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Subsection 3-0 - SUPPRESS: Suppress Target
+// Section 3 - Subsection 0 (Staggered column)
 [
     "CMDWHEEL_action3_sub0_enabled",
     "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for SUPPRESS: Suppress Target"],
-    [_category, "Section 3 - SUPPRESS - Sub 0"],
+    ["Use Custom Subcommand (Staggered column)", "Enable custom subcommand for COLUMN > Staggered column"],
+    [_category, "Section 3 - COLUMN > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -574,27 +574,27 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action3_sub0_name",
     "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 3 - SUPPRESS - Sub 0"],
-    "Suppress Target",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 3 - COLUMN > Subcommands"],
+    "Staggered column",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action3_sub0_code",
     "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 3 - SUPPRESS - Sub 0"],
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 3 - COLUMN > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Subsection 3-1 - SUPPRESS: Suppress Area
+// Section 3 - Subsection 1 (Wedge)
 [
     "CMDWHEEL_action3_sub1_enabled",
     "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for SUPPRESS: Suppress Area"],
-    [_category, "Section 3 - SUPPRESS - Sub 1"],
+    ["Use Custom Subcommand (Wedge)", "Enable custom subcommand for COLUMN > Wedge"],
+    [_category, "Section 3 - COLUMN > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -602,27 +602,27 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action3_sub1_name",
     "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 3 - SUPPRESS - Sub 1"],
-    "Suppress Area",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 3 - COLUMN > Subcommands"],
+    "Wedge",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action3_sub1_code",
     "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 3 - SUPPRESS - Sub 1"],
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 3 - COLUMN > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Subsection 3-2 - SUPPRESS: Suppress Nearest Enemy
+// Section 3 - Subsection 2 (File)
 [
     "CMDWHEEL_action3_sub2_enabled",
     "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for SUPPRESS: Suppress Nearest Enemy"],
-    [_category, "Section 3 - SUPPRESS - Sub 2"],
+    ["Use Custom Subcommand (File)", "Enable custom subcommand for COLUMN > File"],
+    [_category, "Section 3 - COLUMN > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -630,27 +630,27 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action3_sub2_name",
     "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 3 - SUPPRESS - Sub 2"],
-    "Suppress Nearest Enemy",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 3 - COLUMN > Subcommands"],
+    "File",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action3_sub2_code",
     "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 3 - SUPPRESS - Sub 2"],
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 3 - COLUMN > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Subsection 3-3 - SUPPRESS: Suppress Watch Direction
+// Section 3 - Subsection 3 (Line)
 [
     "CMDWHEEL_action3_sub3_enabled",
     "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for SUPPRESS: Suppress Watch Direction"],
-    [_category, "Section 3 - SUPPRESS - Sub 3"],
+    ["Use Custom Subcommand (Line)", "Enable custom subcommand for COLUMN > Line"],
+    [_category, "Section 3 - COLUMN > Subcommands"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -658,465 +658,18 @@ private _category = "Command Wheel";
 [
     "CMDWHEEL_action3_sub3_name",
     "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 3 - SUPPRESS - Sub 3"],
-    "Suppress Watch Direction",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 3 - COLUMN > Subcommands"],
+    "Line",
     1
 ] call CBA_fnc_addSetting;
 
 [
     "CMDWHEEL_action3_sub3_code",
     "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 3 - SUPPRESS - Sub 3"],
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 3 - COLUMN > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;
 
-// Subsection 4-0 - STOP: Hold Position
-[
-    "CMDWHEEL_action4_sub0_enabled",
-    "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for STOP: Hold Position"],
-    [_category, "Section 4 - STOP - Sub 0"],
-    false,
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action4_sub0_name",
-    "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 4 - STOP - Sub 0"],
-    "Hold Position",
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action4_sub0_code",
-    "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 4 - STOP - Sub 0"],
-    "",
-    1
-] call CBA_fnc_addSetting;
-
-// Subsection 4-1 - STOP: Take Cover (Prone)
-[
-    "CMDWHEEL_action4_sub1_enabled",
-    "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for STOP: Take Cover (Prone)"],
-    [_category, "Section 4 - STOP - Sub 1"],
-    false,
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action4_sub1_name",
-    "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 4 - STOP - Sub 1"],
-    "Take Cover (Prone)",
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action4_sub1_code",
-    "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 4 - STOP - Sub 1"],
-    "",
-    1
-] call CBA_fnc_addSetting;
-
-// Subsection 4-2 - STOP: Crouch
-[
-    "CMDWHEEL_action4_sub2_enabled",
-    "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for STOP: Crouch"],
-    [_category, "Section 4 - STOP - Sub 2"],
-    false,
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action4_sub2_name",
-    "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 4 - STOP - Sub 2"],
-    "Crouch",
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action4_sub2_code",
-    "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 4 - STOP - Sub 2"],
-    "",
-    1
-] call CBA_fnc_addSetting;
-
-// Subsection 4-3 - STOP: Stealth Stop
-[
-    "CMDWHEEL_action4_sub3_enabled",
-    "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for STOP: Stealth Stop"],
-    [_category, "Section 4 - STOP - Sub 3"],
-    false,
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action4_sub3_name",
-    "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 4 - STOP - Sub 3"],
-    "Stealth Stop",
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action4_sub3_code",
-    "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 4 - STOP - Sub 3"],
-    "",
-    1
-] call CBA_fnc_addSetting;
-
-// Subsection 5-0 - REGROUP: Regroup On Me
-[
-    "CMDWHEEL_action5_sub0_enabled",
-    "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for REGROUP: Regroup On Me"],
-    [_category, "Section 5 - REGROUP - Sub 0"],
-    false,
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action5_sub0_name",
-    "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 5 - REGROUP - Sub 0"],
-    "Regroup On Me",
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action5_sub0_code",
-    "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 5 - REGROUP - Sub 0"],
-    "",
-    1
-] call CBA_fnc_addSetting;
-
-// Subsection 5-1 - REGROUP: Rally Point
-[
-    "CMDWHEEL_action5_sub1_enabled",
-    "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for REGROUP: Rally Point"],
-    [_category, "Section 5 - REGROUP - Sub 1"],
-    false,
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action5_sub1_name",
-    "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 5 - REGROUP - Sub 1"],
-    "Rally Point",
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action5_sub1_code",
-    "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 5 - REGROUP - Sub 1"],
-    "",
-    1
-] call CBA_fnc_addSetting;
-
-// Subsection 5-2 - REGROUP: Regroup Nearest Unit
-[
-    "CMDWHEEL_action5_sub2_enabled",
-    "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for REGROUP: Regroup Nearest Unit"],
-    [_category, "Section 5 - REGROUP - Sub 2"],
-    false,
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action5_sub2_name",
-    "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 5 - REGROUP - Sub 2"],
-    "Regroup Nearest Unit",
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action5_sub2_code",
-    "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 5 - REGROUP - Sub 2"],
-    "",
-    1
-] call CBA_fnc_addSetting;
-
-// Subsection 5-3 - REGROUP: Regroup Formation
-[
-    "CMDWHEEL_action5_sub3_enabled",
-    "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for REGROUP: Regroup Formation"],
-    [_category, "Section 5 - REGROUP - Sub 3"],
-    false,
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action5_sub3_name",
-    "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 5 - REGROUP - Sub 3"],
-    "Regroup Formation",
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action5_sub3_code",
-    "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 5 - REGROUP - Sub 3"],
-    "",
-    1
-] call CBA_fnc_addSetting;
-
-// Subsection 6-0 - COVER: Suppressive Cover
-[
-    "CMDWHEEL_action6_sub0_enabled",
-    "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for COVER: Suppressive Cover"],
-    [_category, "Section 6 - COVER - Sub 0"],
-    false,
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action6_sub0_name",
-    "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 6 - COVER - Sub 0"],
-    "Suppressive Cover",
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action6_sub0_code",
-    "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 6 - COVER - Sub 0"],
-    "",
-    1
-] call CBA_fnc_addSetting;
-
-// Subsection 6-1 - COVER: Defensive Cover
-[
-    "CMDWHEEL_action6_sub1_enabled",
-    "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for COVER: Defensive Cover"],
-    [_category, "Section 6 - COVER - Sub 1"],
-    false,
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action6_sub1_name",
-    "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 6 - COVER - Sub 1"],
-    "Defensive Cover",
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action6_sub1_code",
-    "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 6 - COVER - Sub 1"],
-    "",
-    1
-] call CBA_fnc_addSetting;
-
-// Subsection 6-2 - COVER: Watch Cover
-[
-    "CMDWHEEL_action6_sub2_enabled",
-    "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for COVER: Watch Cover"],
-    [_category, "Section 6 - COVER - Sub 2"],
-    false,
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action6_sub2_name",
-    "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 6 - COVER - Sub 2"],
-    "Watch Cover",
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action6_sub2_code",
-    "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 6 - COVER - Sub 2"],
-    "",
-    1
-] call CBA_fnc_addSetting;
-
-// Subsection 6-3 - COVER: Overwatch
-[
-    "CMDWHEEL_action6_sub3_enabled",
-    "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for COVER: Overwatch"],
-    [_category, "Section 6 - COVER - Sub 3"],
-    false,
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action6_sub3_name",
-    "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 6 - COVER - Sub 3"],
-    "Overwatch",
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action6_sub3_code",
-    "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 6 - COVER - Sub 3"],
-    "",
-    1
-] call CBA_fnc_addSetting;
-
-// Subsection 7-0 - ADVANCE: Assault
-[
-    "CMDWHEEL_action7_sub0_enabled",
-    "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for ADVANCE: Assault"],
-    [_category, "Section 7 - ADVANCE - Sub 0"],
-    false,
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action7_sub0_name",
-    "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 7 - ADVANCE - Sub 0"],
-    "Assault",
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action7_sub0_code",
-    "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 7 - ADVANCE - Sub 0"],
-    "",
-    1
-] call CBA_fnc_addSetting;
-
-// Subsection 7-1 - ADVANCE: Tactical Advance
-[
-    "CMDWHEEL_action7_sub1_enabled",
-    "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for ADVANCE: Tactical Advance"],
-    [_category, "Section 7 - ADVANCE - Sub 1"],
-    false,
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action7_sub1_name",
-    "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 7 - ADVANCE - Sub 1"],
-    "Tactical Advance",
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action7_sub1_code",
-    "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 7 - ADVANCE - Sub 1"],
-    "",
-    1
-] call CBA_fnc_addSetting;
-
-// Subsection 7-2 - ADVANCE: Bounding Overwatch
-[
-    "CMDWHEEL_action7_sub2_enabled",
-    "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for ADVANCE: Bounding Overwatch"],
-    [_category, "Section 7 - ADVANCE - Sub 2"],
-    false,
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action7_sub2_name",
-    "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 7 - ADVANCE - Sub 2"],
-    "Bounding Overwatch",
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action7_sub2_code",
-    "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 7 - ADVANCE - Sub 2"],
-    "",
-    1
-] call CBA_fnc_addSetting;
-
-// Subsection 7-3 - ADVANCE: Stealth Advance
-[
-    "CMDWHEEL_action7_sub3_enabled",
-    "CHECKBOX",
-    ["Use Custom Sub-Action", "Enable custom action for ADVANCE: Stealth Advance"],
-    [_category, "Section 7 - ADVANCE - Sub 3"],
-    false,
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action7_sub3_name",
-    "EDITBOX",
-    ["Sub-Action Name", "Display name for this sub-action"],
-    [_category, "Section 7 - ADVANCE - Sub 3"],
-    "Stealth Advance",
-    1
-] call CBA_fnc_addSetting;
-
-[
-    "CMDWHEEL_action7_sub3_code",
-    "EDITBOX",
-    ["Sub-Action Code", "SQF code to execute or script call"],
-    [_category, "Section 7 - ADVANCE - Sub 3"],
-    "",
-    1
-] call CBA_fnc_addSetting;
