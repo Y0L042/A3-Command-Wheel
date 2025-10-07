@@ -1,8 +1,8 @@
 /*
- * Wrapper for: Stealth > Heal soldier
- * Calls: fn_healSoldier.sqf
+ * Wrapper for: Stealth > Flank Left
+ * Calls: fn_flankLeft.sqf
  */
 
 params ["_caller"];
 
-_caller call CMDWHEEL_fnc_healSoldier;
+_caller call CMDWHEEL_fnc_flankLeft;

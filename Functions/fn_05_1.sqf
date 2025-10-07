@@ -1,7 +1,8 @@
 /*
- * Empty sub-command slot 05_1
+ * Wrapper for: 2 Teams > Leapfrog
+ * Calls: fn_leapfrog.sqf
  */
 
 params ["_caller"];
 
-// No command assigned
+_caller call CMDWHEEL_fnc_leapfrog;

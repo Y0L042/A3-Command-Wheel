@@ -69,19 +69,19 @@ COMMANDS = {
                 "command": "fn_alert.sqf"
             },
             1: {
-                "name": "Target enemy",
-                "hint": "hint 'Target enemy'",
-                "command": "fn_targetEnemy.sqf"
+                "name": "Aggro",
+                "hint": "hint 'Aggro'",
+                "command": "fn_aggro.sqf"
             },
             2: {
-                "name": "Heal soldier",
-                "hint": "hint 'Heal soldier'",
-                "command": "fn_healSoldier.sqf"
+                "name": "Flank Left",
+                "hint": "hint 'Flank Left'",
+                "command": "fn_flankLeft.sqf"
             },
             3: {
-                "name": "Disengage",
-                "hint": "hint 'Disengage'",
-                "command": "fn_disengage.sqf"
+                "name": "Flank Right",
+                "hint": "hint 'Flank Right'",
+                "command": "fn_flankRight.sqf"
             }
         }
     },
@@ -103,7 +103,7 @@ COMMANDS = {
             2: {
                 "name": "File",
                 "hint": "hint 'File'",
-                "command": "fn_file.sqf"
+                "command": "fn_ffile.sqf"
             },
             3: {
                 "name": "Line",
@@ -133,9 +133,36 @@ COMMANDS = {
                 "command": "fn_healSoldier.sqf"
             },
             3: {
-                "name": "Disengage",
-                "hint": "hint 'Disengage'",
-                "command": "fn_disengage.sqf"
+                "name": "Cover",
+                "hint": "hint 'Cover'",
+                "command": "fn_cover.sqf"
+            }
+        }
+    },
+    5: {
+        "name": "2 Teams",
+        "hint": "hint 'Two Teams'",
+        "command": "fn_twoTeams.sqf",
+        "subs": {
+            0: {
+                "name": "3 Teams",
+                "hint": "hint 'Three Teams'",
+                "command": "fn_threeTeams.sqf"
+            },
+            1: {
+                "name": "Leapfrog",
+                "hint": "hint 'Leapfrog'",
+                "command": "fn_leapfrog.sqf"
+            },
+            2: {
+                "name": "Heal soldier",
+                "hint": "hint 'Heal soldier'",
+                "command": "fn_healSoldier.sqf"
+            },
+            3: {
+                "name": "Cover",
+                "hint": "hint 'Cover'",
+                "command": "fn_cover.sqf"
             }
         }
     },

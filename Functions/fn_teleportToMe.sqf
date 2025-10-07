@@ -7,18 +7,12 @@ params ["_caller"];
 
 hint "Teleport to me";
 
-private _groupUnits = units group player - [player];
-private _leaderPos = getPos player;
-private _leaderDir = getDir player;
+private _groupUnits = [_caller] call CMDWHEEL_fnc_getCommandUnits;
+// Exit if no units to command
+if (count _groupUnits == 0) exitWith {
+    hint "No units to command";
+};
 
-/*
- * Implementation: fn_teleportToMe.sqf
- *
- * Add your command logic here
- */
-params ["_caller"];
-
-private _groupUnits = units group player - [player];
 private _leaderPos = getPos player;
 private _leaderDir = getDir player;
 

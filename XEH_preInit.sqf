@@ -141,12 +141,12 @@ private _category = "Command Wheel";
     1
 ] call CBA_fnc_addSetting;
 
-// Section 5 - SECTION 5
+// Section 5 - 2 TEAMS
 [
     "CMDWHEEL_action5_enabled",
     "CHECKBOX",
-    ["Use Custom Action (SECTION 5)", "Enable custom action for SECTION 5"],
-    [_category, "Section 5 - SECTION 5"],
+    ["Use Custom Action (2 TEAMS)", "Enable custom action for 2 TEAMS"],
+    [_category, "Section 5 - 2 TEAMS"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -155,8 +155,8 @@ private _category = "Command Wheel";
     "CMDWHEEL_action5_name",
     "EDITBOX",
     ["Action Name", "Display name for this action"],
-    [_category, "Section 5 - SECTION 5"],
-    "Section 5",
+    [_category, "Section 5 - 2 TEAMS"],
+    "2 Teams",
     1
 ] call CBA_fnc_addSetting;
 
@@ -164,7 +164,7 @@ private _category = "Command Wheel";
     "CMDWHEEL_action5_code",
     "EDITBOX",
     ["Action Code", "SQF code to execute (e.g., 'hint ''Hello''') or script call (e.g., 'call myFunction' or '[] execVM ''myScript.sqf''')"],
-    [_category, "Section 5 - SECTION 5"],
+    [_category, "Section 5 - 2 TEAMS"],
     "",
     1
 ] call CBA_fnc_addSetting;
@@ -477,11 +477,11 @@ private _category = "Command Wheel";
     1
 ] call CBA_fnc_addSetting;
 
-// Section 2 - Subsection 1 (Target enemy)
+// Section 2 - Subsection 1 (Aggro)
 [
     "CMDWHEEL_action2_sub1_enabled",
     "CHECKBOX",
-    ["Use Custom Subcommand (Target enemy)", "Enable custom subcommand for STEALTH > Target enemy"],
+    ["Use Custom Subcommand (Aggro)", "Enable custom subcommand for STEALTH > Aggro"],
     [_category, "Section 2 - STEALTH > Subcommands"],
     false,
     1
@@ -492,7 +492,7 @@ private _category = "Command Wheel";
     "EDITBOX",
     ["Subcommand Name", "Display name for this subcommand"],
     [_category, "Section 2 - STEALTH > Subcommands"],
-    "Target enemy",
+    "Aggro",
     1
 ] call CBA_fnc_addSetting;
 
@@ -505,11 +505,11 @@ private _category = "Command Wheel";
     1
 ] call CBA_fnc_addSetting;
 
-// Section 2 - Subsection 2 (Heal soldier)
+// Section 2 - Subsection 2 (Flank Left)
 [
     "CMDWHEEL_action2_sub2_enabled",
     "CHECKBOX",
-    ["Use Custom Subcommand (Heal soldier)", "Enable custom subcommand for STEALTH > Heal soldier"],
+    ["Use Custom Subcommand (Flank Left)", "Enable custom subcommand for STEALTH > Flank Left"],
     [_category, "Section 2 - STEALTH > Subcommands"],
     false,
     1
@@ -520,7 +520,7 @@ private _category = "Command Wheel";
     "EDITBOX",
     ["Subcommand Name", "Display name for this subcommand"],
     [_category, "Section 2 - STEALTH > Subcommands"],
-    "Heal soldier",
+    "Flank Left",
     1
 ] call CBA_fnc_addSetting;
 
@@ -533,11 +533,11 @@ private _category = "Command Wheel";
     1
 ] call CBA_fnc_addSetting;
 
-// Section 2 - Subsection 3 (Disengage)
+// Section 2 - Subsection 3 (Flank Right)
 [
     "CMDWHEEL_action2_sub3_enabled",
     "CHECKBOX",
-    ["Use Custom Subcommand (Disengage)", "Enable custom subcommand for STEALTH > Disengage"],
+    ["Use Custom Subcommand (Flank Right)", "Enable custom subcommand for STEALTH > Flank Right"],
     [_category, "Section 2 - STEALTH > Subcommands"],
     false,
     1
@@ -548,7 +548,7 @@ private _category = "Command Wheel";
     "EDITBOX",
     ["Subcommand Name", "Display name for this subcommand"],
     [_category, "Section 2 - STEALTH > Subcommands"],
-    "Disengage",
+    "Flank Right",
     1
 ] call CBA_fnc_addSetting;
 
@@ -757,11 +757,11 @@ private _category = "Command Wheel";
     1
 ] call CBA_fnc_addSetting;
 
-// Section 4 - Subsection 3 (Disengage)
+// Section 4 - Subsection 3 (Cover)
 [
     "CMDWHEEL_action4_sub3_enabled",
     "CHECKBOX",
-    ["Use Custom Subcommand (Disengage)", "Enable custom subcommand for SUPPRESSIVE FIRE > Disengage"],
+    ["Use Custom Subcommand (Cover)", "Enable custom subcommand for SUPPRESSIVE FIRE > Cover"],
     [_category, "Section 4 - SUPPRESSIVE FIRE > Subcommands"],
     false,
     1
@@ -772,7 +772,7 @@ private _category = "Command Wheel";
     "EDITBOX",
     ["Subcommand Name", "Display name for this subcommand"],
     [_category, "Section 4 - SUPPRESSIVE FIRE > Subcommands"],
-    "Disengage",
+    "Cover",
     1
 ] call CBA_fnc_addSetting;
 
@@ -781,6 +781,118 @@ private _category = "Command Wheel";
     "EDITBOX",
     ["Subcommand Code", "SQF code to execute"],
     [_category, "Section 4 - SUPPRESSIVE FIRE > Subcommands"],
+    "",
+    1
+] call CBA_fnc_addSetting;
+
+// Section 5 - Subsection 0 (3 Teams)
+[
+    "CMDWHEEL_action5_sub0_enabled",
+    "CHECKBOX",
+    ["Use Custom Subcommand (3 Teams)", "Enable custom subcommand for 2 TEAMS > 3 Teams"],
+    [_category, "Section 5 - 2 TEAMS > Subcommands"],
+    false,
+    1
+] call CBA_fnc_addSetting;
+
+[
+    "CMDWHEEL_action5_sub0_name",
+    "EDITBOX",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 5 - 2 TEAMS > Subcommands"],
+    "3 Teams",
+    1
+] call CBA_fnc_addSetting;
+
+[
+    "CMDWHEEL_action5_sub0_code",
+    "EDITBOX",
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 5 - 2 TEAMS > Subcommands"],
+    "",
+    1
+] call CBA_fnc_addSetting;
+
+// Section 5 - Subsection 1 (Leapfrog)
+[
+    "CMDWHEEL_action5_sub1_enabled",
+    "CHECKBOX",
+    ["Use Custom Subcommand (Leapfrog)", "Enable custom subcommand for 2 TEAMS > Leapfrog"],
+    [_category, "Section 5 - 2 TEAMS > Subcommands"],
+    false,
+    1
+] call CBA_fnc_addSetting;
+
+[
+    "CMDWHEEL_action5_sub1_name",
+    "EDITBOX",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 5 - 2 TEAMS > Subcommands"],
+    "Leapfrog",
+    1
+] call CBA_fnc_addSetting;
+
+[
+    "CMDWHEEL_action5_sub1_code",
+    "EDITBOX",
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 5 - 2 TEAMS > Subcommands"],
+    "",
+    1
+] call CBA_fnc_addSetting;
+
+// Section 5 - Subsection 2 (Heal soldier)
+[
+    "CMDWHEEL_action5_sub2_enabled",
+    "CHECKBOX",
+    ["Use Custom Subcommand (Heal soldier)", "Enable custom subcommand for 2 TEAMS > Heal soldier"],
+    [_category, "Section 5 - 2 TEAMS > Subcommands"],
+    false,
+    1
+] call CBA_fnc_addSetting;
+
+[
+    "CMDWHEEL_action5_sub2_name",
+    "EDITBOX",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 5 - 2 TEAMS > Subcommands"],
+    "Heal soldier",
+    1
+] call CBA_fnc_addSetting;
+
+[
+    "CMDWHEEL_action5_sub2_code",
+    "EDITBOX",
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 5 - 2 TEAMS > Subcommands"],
+    "",
+    1
+] call CBA_fnc_addSetting;
+
+// Section 5 - Subsection 3 (Cover)
+[
+    "CMDWHEEL_action5_sub3_enabled",
+    "CHECKBOX",
+    ["Use Custom Subcommand (Cover)", "Enable custom subcommand for 2 TEAMS > Cover"],
+    [_category, "Section 5 - 2 TEAMS > Subcommands"],
+    false,
+    1
+] call CBA_fnc_addSetting;
+
+[
+    "CMDWHEEL_action5_sub3_name",
+    "EDITBOX",
+    ["Subcommand Name", "Display name for this subcommand"],
+    [_category, "Section 5 - 2 TEAMS > Subcommands"],
+    "Cover",
+    1
+] call CBA_fnc_addSetting;
+
+[
+    "CMDWHEEL_action5_sub3_code",
+    "EDITBOX",
+    ["Subcommand Code", "SQF code to execute"],
+    [_category, "Section 5 - 2 TEAMS > Subcommands"],
     "",
     1
 ] call CBA_fnc_addSetting;

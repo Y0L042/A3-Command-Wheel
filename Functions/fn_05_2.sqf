@@ -1,7 +1,8 @@
 /*
- * Empty sub-command slot 05_2
+ * Wrapper for: 2 Teams > Heal soldier
+ * Calls: fn_healSoldier.sqf
  */
 
 params ["_caller"];
 
-// No command assigned
+_caller call CMDWHEEL_fnc_healSoldier;

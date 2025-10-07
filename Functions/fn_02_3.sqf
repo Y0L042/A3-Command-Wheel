@@ -1,8 +1,8 @@
 /*
- * Wrapper for: Stealth > Disengage
- * Calls: fn_disengage.sqf
+ * Wrapper for: Stealth > Flank Right
+ * Calls: fn_flankRight.sqf
  */
 
 params ["_caller"];
 
-_caller call CMDWHEEL_fnc_disengage;
+_caller call CMDWHEEL_fnc_flankRight;

@@ -1,0 +1,13 @@
+name = "Command Wheel";
+author = "Y0L042";
+description = "Radial command wheel for Arma 3 - Provides an intuitive radial menu interface for issuing commands to AI units";
+picture = "logo.paa";
+logo = "logo.paa";
+logoOver = "logo.paa";
+tooltip = "Command Wheel";
+tooltipOwned = "Command Wheel - Owned";
+overview = "A customizable radial command wheel for Arma 3";
+actionName = "GitHub";
+action = "https://github.com/Y0L042/A3-Command-Wheel";
+hideName = 0;
+hidePicture = 0;

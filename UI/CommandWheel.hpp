@@ -537,6 +537,19 @@ class CommandWheel {
             style = 2 + 0x100;
             angle = 202.5;
         };
+        // 247.5° (2 TEAMS)
+        class LabelBottomLeft: RscText {
+            idc = 9025;
+            text = "2 TEAMS";
+            x = safeZoneX + safeZoneW * 0.5 + (-110 * pixelW) - (2.5 * GUI_GRID_CENTER_W);
+            y = safeZoneY + safeZoneH * 0.5 + (45 * pixelH) - (0.5 * GUI_GRID_CENTER_H);
+            w = 5 * GUI_GRID_CENTER_W;
+            h = 1 * GUI_GRID_CENTER_H;
+            colorText[] = {1, 1, 1, 1};
+            sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.0)";
+            style = 2 + 0x100;
+            angle = 247.5;
+        };
         // 337.5° (TELEPORT TO ME)
         class LabelTopLeft: RscText {
             idc = 9027;
@@ -668,7 +681,7 @@ class CommandWheel {
 };
         class SubLabel2_1: RscText {
     idc = 9209;
-    text = "TARGET ENEMY";
+    text = "AGGRO";
     x = safeZoneX + safeZoneW * 0.5 + (232 * pixelW) - (2.0 * GUI_GRID_CENTER_W);
     y = safeZoneY + safeZoneH * 0.5 + (58 * pixelH) - (0.4 * GUI_GRID_CENTER_H);
     w = 4 * GUI_GRID_CENTER_W;
@@ -680,7 +693,7 @@ class CommandWheel {
 };
         class SubLabel2_2: RscText {
     idc = 9210;
-    text = "HEAL SOLDIER";
+    text = "FLANK LEFT";
     x = safeZoneX + safeZoneW * 0.5 + (205 * pixelW) - (2.0 * GUI_GRID_CENTER_W);
     y = safeZoneY + safeZoneH * 0.5 + (123 * pixelH) - (0.4 * GUI_GRID_CENTER_H);
     w = 4 * GUI_GRID_CENTER_W;
@@ -692,7 +705,7 @@ class CommandWheel {
 };
         class SubLabel2_3: RscText {
     idc = 9211;
-    text = "DISENGAGE";
+    text = "FLANK RIGHT";
     x = safeZoneX + safeZoneW * 0.5 + (161 * pixelW) - (2.0 * GUI_GRID_CENTER_W);
     y = safeZoneY + safeZoneH * 0.5 + (177 * pixelH) - (0.4 * GUI_GRID_CENTER_H);
     w = 4 * GUI_GRID_CENTER_W;
@@ -792,7 +805,7 @@ class CommandWheel {
 };
         class SubLabel4_3: RscText {
     idc = 9219;
-    text = "DISENGAGE";
+    text = "COVER";
     x = safeZoneX + safeZoneW * 0.5 + (-177 * pixelW) - (2.0 * GUI_GRID_CENTER_W);
     y = safeZoneY + safeZoneH * 0.5 + (161 * pixelH) - (0.4 * GUI_GRID_CENTER_H);
     w = 4 * GUI_GRID_CENTER_W;
@@ -803,7 +816,55 @@ class CommandWheel {
     angle = 227.81;
 };
 
-        // Section 5 (empty) subcommand labels
+        // Section 5 (2 TEAMS) subcommand labels
+        class SubLabel5_0: RscText {
+    idc = 9220;
+    text = "3 TEAMS";
+    x = safeZoneX + safeZoneW * 0.5 + (-161 * pixelW) - (2.0 * GUI_GRID_CENTER_W);
+    y = safeZoneY + safeZoneH * 0.5 + (177 * pixelH) - (0.4 * GUI_GRID_CENTER_H);
+    w = 4 * GUI_GRID_CENTER_W;
+    h = 0.8 * GUI_GRID_CENTER_H;
+    colorText[] = {0.7, 0.9, 1, 0};
+    sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+    style = 2 + 0x100;
+    angle = 222.19;
+};
+        class SubLabel5_1: RscText {
+    idc = 9221;
+    text = "LEAPFROG";
+    x = safeZoneX + safeZoneW * 0.5 + (-205 * pixelW) - (2.0 * GUI_GRID_CENTER_W);
+    y = safeZoneY + safeZoneH * 0.5 + (123 * pixelH) - (0.4 * GUI_GRID_CENTER_H);
+    w = 4 * GUI_GRID_CENTER_W;
+    h = 0.8 * GUI_GRID_CENTER_H;
+    colorText[] = {0.7, 0.9, 1, 0};
+    sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+    style = 2 + 0x100;
+    angle = 239.06;
+};
+        class SubLabel5_2: RscText {
+    idc = 9222;
+    text = "HEAL SOLDIER";
+    x = safeZoneX + safeZoneW * 0.5 + (-232 * pixelW) - (2.0 * GUI_GRID_CENTER_W);
+    y = safeZoneY + safeZoneH * 0.5 + (58 * pixelH) - (0.4 * GUI_GRID_CENTER_H);
+    w = 4 * GUI_GRID_CENTER_W;
+    h = 0.8 * GUI_GRID_CENTER_H;
+    colorText[] = {0.7, 0.9, 1, 0};
+    sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+    style = 2 + 0x100;
+    angle = 255.94;
+};
+        class SubLabel5_3: RscText {
+    idc = 9223;
+    text = "COVER";
+    x = safeZoneX + safeZoneW * 0.5 + (-239 * pixelW) - (2.0 * GUI_GRID_CENTER_W);
+    y = safeZoneY + safeZoneH * 0.5 + (-11 * pixelH) - (0.4 * GUI_GRID_CENTER_H);
+    w = 4 * GUI_GRID_CENTER_W;
+    h = 0.8 * GUI_GRID_CENTER_H;
+    colorText[] = {0.7, 0.9, 1, 0};
+    sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+    style = 2 + 0x100;
+    angle = 272.81;
+};
 
         // Section 6 (empty) subcommand labels
 

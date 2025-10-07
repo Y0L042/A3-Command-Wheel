@@ -1,8 +1,8 @@
 /*
- * Wrapper for: Suppressive fire > Disengage
- * Calls: fn_disengage.sqf
+ * Wrapper for: Suppressive fire > Cover
+ * Calls: fn_cover.sqf
  */
 
 params ["_caller"];
 
-_caller call CMDWHEEL_fnc_disengage;
+_caller call CMDWHEEL_fnc_cover;

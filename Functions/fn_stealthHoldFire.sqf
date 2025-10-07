@@ -8,7 +8,12 @@ params ["_caller"];
 
 hint "Stealth & Hold Fire";
 
-private _groupUnits = units group player - [player];
+private _groupUnits = [_caller] call CMDWHEEL_fnc_getCommandUnits;
+// Exit if no units to command
+if (count _groupUnits == 0) exitWith {
+    hint "No units to command";
+};
+
 
 {
     _x setBehaviour "STEALTH";

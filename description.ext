@@ -1,12 +1,6 @@
 #include "UI\BaseControls.hpp"
 #include "UI\CommandWheel.hpp"
 
-class Extended_PreInit_EventHandlers {
-    class CMDWHEEL {
-        init = "call compile preprocessFileLineNumbers 'XEH_preInit.sqf'";
-    };
-};
-
 class CfgFunctions {
     class CMDWHEEL {
         tag = "CMDWHEEL";
@@ -18,6 +12,7 @@ class CfgFunctions {
             class load {};
             class unload {};
             class executeAction {};
+            class getCommandUnits {};
 
             class hold {};
             class regroup {};
@@ -30,7 +25,19 @@ class CfgFunctions {
             class stealthHoldFire {};
             class alert {};
             class garrison {};
-            
+            class wedge {};
+            class line {};
+            class ffile {};
+            class column {};
+            class staggeredColumn {};
+            class cover {};
+            class twoTeams {};
+            class threeTeams {};
+            class aggro {};
+            class flankLeft {};
+            class flankRight {};
+            class leapfrog {};
+
             // Wrapper functions (main sections 00-07)
             // Note: These correspond to hold, stealthHoldFire, suppressiveFire, column, etc.
             class 00 {};

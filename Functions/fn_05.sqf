@@ -1,7 +1,8 @@
 /*
- * Empty command slot 05
+ * Wrapper for: 2 Teams
+ * Calls: fn_twoTeams.sqf
  */
 
 params ["_caller"];
 
-// No command assigned
+_caller call CMDWHEEL_fnc_twoTeams;

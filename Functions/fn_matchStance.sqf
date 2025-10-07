@@ -8,9 +8,12 @@ params ["_caller"];
 
 hint "Auto stance";
 
-// TODO
+private _groupUnits = [_caller] call CMDWHEEL_fnc_getCommandUnits;
+// Exit if no units to command
+if (count _groupUnits == 0) exitWith {
+    hint "No units to command";
+};
 
-private _groupUnits = units group player - [player];
 
 {
     _x setUnitPos "AUTO";

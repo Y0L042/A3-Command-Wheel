@@ -1,7 +1,8 @@
 /*
- * Empty sub-command slot 05_3
+ * Wrapper for: 2 Teams > Cover
+ * Calls: fn_cover.sqf
  */
 
 params ["_caller"];
 
-// No command assigned
+_caller call CMDWHEEL_fnc_cover;
